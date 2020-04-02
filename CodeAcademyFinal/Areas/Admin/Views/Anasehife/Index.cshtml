@@ -1,0 +1,63 @@
+﻿@model AdminHomeViewModel
+
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="users-count-container d-flex">
+                <span class="mr-5" style="font-weight:600;">İstifadəçilərin sayı</span>
+                <div class="count-circle-container d-flex align-items-center">
+                    <div class="count-circle"></div>
+                    <span class="ml-2">@Model.NumberOfCustomUsers</span>
+                </div>
+            </div>
+            <div class="messages-count-container d-flex mt-3">
+                <span class="mr-5" style="font-weight:600">Gələn məktubların sayı</span>
+                <div class="count-circle-container d-flex align-items-center">
+                    <div class="count-circle"></div>
+                    <span class="ml-2">@Model.NumberOfMessages</span>
+                </div>
+            </div>
+            <h5 class="mt-5" style="font-weight:600;">Elanlar</h5>
+        </div>
+        <div class="col-2">
+            <div class="announcement-stat-container">
+                <div style="position:absolute;z-index:1;font-weight:600;font-size:20px;color:#484646;">
+                    <span>@Math.Round(((Model.NumberOfPendingAnnouncements / Model.NumberOfAnnouncements) * 100), 2)%</span>
+                </div>
+                <div class="announcement-stat-filled announcement-stat-filled-pending" style="height:@Math.Round(((Model.NumberOfPendingAnnouncements / Model.NumberOfAnnouncements) * 100), 2)%;">
+                </div>
+            </div>
+            <p style="font-weight:600;color:chocolate;">Gözləyən</p>
+        </div>
+        <div class="col-2">
+            <div class="announcement-stat-container">
+                <div style="position:absolute;z-index:1;font-weight:600;font-size:20px;color:#484646;">
+                    <span>@Math.Round(((Model.NumberOfActiveAnnouncements / Model.NumberOfAnnouncements) * 100), 2)%</span>
+                </div>
+                <div class="announcement-stat-filled announcement-stat-filled-active" style="height:@Math.Round(((Model.NumberOfActiveAnnouncements / Model.NumberOfAnnouncements) * 100), 2)%;">
+                </div>
+            </div>
+            <p style="font-weight:600;color:chocolate;">Aktiv</p>
+        </div>
+        <div class="col-2">
+            <div class="announcement-stat-container">
+                <div style="position:absolute;z-index:1;font-weight:600;font-size:20px;color:#484646;">
+                    <span>@Math.Round(((Model.NumberOfDeletedAnnouncements / Model.NumberOfAnnouncements) * 100), 2)%</span>
+                </div>
+                <div class="announcement-stat-filled announcement-stat-filled-delete" style="height:@Math.Round(((Model.NumberOfDeletedAnnouncements / Model.NumberOfAnnouncements) * 100), 2)%;">
+                </div>
+            </div>
+            <p style="font-weight:600;color:chocolate;">Silinmiş</p>
+        </div>
+        <div class="col-2">
+            <div class="announcement-stat-container">
+                <div style="position:absolute;z-index:1;font-weight:600;font-size:20px;color:#484646;">
+                    <span>@Math.Round(((Model.NumberOfBanAnnouncements / Model.NumberOfAnnouncements) * 100), 2)%</span>
+                </div>
+                <div class="announcement-stat-filled announcement-stat-filled-ban" style="height:@Math.Round(((Model.NumberOfBanAnnouncements / Model.NumberOfAnnouncements) * 100), 2)%;">
+                </div>
+            </div>
+            <p style="font-weight:600;color:chocolate;">Təsdiq edilməmiş</p>
+        </div>
+    </div>
+
+

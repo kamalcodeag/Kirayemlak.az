@@ -1,0 +1,93 @@
+﻿@model Announcement
+
+<div class="row">
+    <div class="col-12 position-relative">
+        <h3 class="mb-5">Elanın nəzərdən keçirilməsi</h3>
+        <form asp-area="Admin" asp-controller="Elanlar" asp-action="Elanitesdiqet" asp-route-id="@ViewBag.AnnouncementId" method="post">
+            <div class="mb-3">
+                <span style="font-size:20px;font-weight:600">Kateqoriya : </span>
+                <span style="font-size:20px;">@(ViewBag.IsVIP == true ? "VIP(ödənişli) elan" : "Adi(ödənişsiz) elan")</span>
+            </div>
+            <div class="mb-3">
+                <span style="font-size:20px;font-weight:600">Mülk : </span>
+                <span style="font-size:20px;">@ViewBag.EstateName</span>
+            </div>
+            <div class="mb-3">
+                <span style="font-size:20px;font-weight:600">Şəhər(rayon) : </span>
+                <span style="font-size:20px;">@ViewBag.CityName</span>
+            </div>
+
+            @if (ViewBag.EstateName == "Mənzil" || ViewBag.EstateName == "Ev/Villa")
+            {
+                <div class="mb-3">
+                    <span style="font-size:20px;font-weight:600">Otaq sayı : </span>
+                    <span style="font-size:20px;">@(ViewBag.Room.Length != 9 ? ViewBag.Room.Substring(ViewBag.Room.Length - 8, 1) : ViewBag.Room.Substring(ViewBag.Room.Length - 9, 2))</span>
+                </div>
+            }
+
+            <div class="mb-3 d-flex flex-wrap">
+                @foreach (var announcementPhoto in ViewBag.Photos)
+                {
+                    <img class="mr-3" src="~/MainPageFiles/images/announcements/@announcementPhoto.AnnouncementPhotoURL" />
+                }
+            </div>
+            <div class="mb-3">
+                @if (ViewBag.EstateName == "Torpaq")
+                {
+                    <span style="font-size:20px;font-weight:600">Sahə(sot, m²) : </span> <input asp-for="AreaForView" data-val="true" data-val-number="Zəhmət olmasa, düzgün parameter daxil edin" data-val-required="Zəhmət olmasa, boşluğu doldurun" class="form-group" value="@ViewBag.AreaForView.ToString().Substring(0, ViewBag.AreaForView.ToString().Length - 3)" /> <span style="font-size:20px;">sot</span>
+                    <span data-valmsg-for="AreaForView" data-valmsg-replace="true" class="ml-5 text-danger"></span>
+                    <input asp-for="Area" data-val="true" data-val-number="Zəhmət olmasa, düzgün parameter daxil edin" data-val-required="Zəhmət olmasa, boşluğu doldurun" class="form-group" value="@ViewBag.Area.ToString().Substring(0, ViewBag.Area.ToString().Length - 3)" style="display:none;" /> <span style="font-size:20px;">m²</span>
+                }
+                else
+                {
+                    <span style="font-size:20px;font-weight:600">Sahə(sot, m²) : </span> <input asp-for="Area" data-val="true" data-val-number="Zəhmət olmasa, düzgün parameter daxil edin" data-val-required="Zəhmət olmasa, boşluğu doldurun" class="form-group" value="@ViewBag.Area" /> <span style="font-size:20px;">m²</span>
+                    <span data-valmsg-for="Area" data-valmsg-replace="true" class="ml-5 text-danger"></span>
+                    <input asp-for="AreaForView" data-val="true" data-val-number="Zəhmət olmasa, düzgün parameter daxil edin" data-val-required="Zəhmət olmasa, boşluğu doldurun" class="form-group" value="@ViewBag.AreaForView" style="display:none;" />
+                }
+            </div>
+
+            @if (ViewBag.Duration == "Aylıq")
+            {
+                <div class="mb-3">
+                    <span style="font-size:20px;font-weight:600">Qiymət(ay) : </span> <input asp-for="Price" class="form-group" value="@ViewBag.Price"> <span style="font-size:20px;">AZN</span>
+                </div>
+                <div class="mb-3">
+                    <span style="font-size:20px;font-weight:600">Qiymət(gün) : </span> <input class="form-group" value="-" disabled="disabled"> <span style="font-size:20px;">AZN</span>
+                </div>
+            }
+            else
+            {
+                <div class="mb-3">
+                    <span style="font-size:20px;font-weight:600">Qiymət(ay) : </span> <input class="form-group" value="-" disabled="disabled"> <span style="font-size:20px;">AZN</span>
+                </div>
+                <div class="mb-3">
+                    <span style="font-size:20px;font-weight:600">Qiymət(gün) : </span> <input asp-for="Price" class="form-group" value="@ViewBag.Price"> <span style="font-size:20px;">AZN</span>
+                </div>
+            }
+            <span asp-validation-for="Price" class="ml-5 text-danger"></span>
+
+            <div class="mb-3 d-flex flex-column">
+                <div class="mb-3" style="font-size:20px;font-weight:600">Ətraflı məlumat : </div>
+                <textarea asp-for="Details" style="resize:none;text-indent:5px;" class="form-group mb-0 pb-0" rows="10" cols="70">
+                    @ViewBag.Details
+                </textarea>
+                <span asp-validation-for="Details" class="text-danger"></span>
+            </div>
+            <div class="mb-3 d-flex justify-content-between">
+                <input type="submit" class="form-group btn btn-primary px-5" value="Təsdiqlə" style="text-indent:0;">
+            </div>
+        </form>
+        <form asp-area="Admin" asp-controller="Elanlar" asp-action="Elaniengelle" asp-route-id="@ViewBag.AnnouncementId" method="post" style="position:absolute;right:2%;bottom:1.6%;">
+            <input type="submit" class="form-group btn btn-danger"
+                   value="Təsdiq edilməmişlərə əlavə et" style="text-indent:0;">
+        </form>
+    </div>
+</div>
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+}

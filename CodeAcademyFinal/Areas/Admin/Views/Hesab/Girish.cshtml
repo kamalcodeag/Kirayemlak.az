@@ -1,0 +1,69 @@
+﻿@model  AdminSignInViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/AdminPanelFiles/fonts/maven-pro-light.css">
+    <link href="~/AdminPanelFiles/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- FOR SMALL SCREEN section start -->
+    <section id="for-small-screen">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="text-align:center;">Veb portalın idarəetmə bölməsi yalnız böyük ekranlar üçün nəzərdə tutulub</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOR SMALL SCREEN section end -->
+    <!-- ADMIN LOGIN section start -->
+    <section id="admin-login">
+        <div class="container py-5 vh-100">
+            <div class="my-5 py-5">
+                <h3 class="text-center py-5">Kirayemlak.az veb portalının idarəetmə bölməsinə giriş</h3>
+                <form asp-area="Admin" asp-controller="Hesab" asp-action="Girish" method="post" class="row d-flex flex-column align-items-center">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="col-6 d-flex flex-column align-items-center">
+                        <input asp-for="UserName" class="form-group w-75" placeholder="İstifadəçi adı" style="text-indent:10px;" />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div class="col-6 mt-3 d-flex flex-column align-items-center">
+                        <input asp-for="Password" class="form-group w-75" placeholder="Şifrə" style="text-indent:10px;" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="col-6 mt-3 d-flex flex-column align-items-center">
+                        <input type="submit" class="form-group w-75 btn btn-primary" value="Daxil ol">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ADMIN LOGIN section end -->
+
+
+
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+}
+
+</body>
+
+</html>

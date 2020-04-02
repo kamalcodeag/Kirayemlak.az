@@ -1,0 +1,30 @@
+﻿@model  AdminChangePasswordViewModel
+
+<h3 class="mb-5">Şifrəni dəyiş</h3>
+
+@if(TempData["PasswordChanged"] != null)
+{
+    <p class="text-success">Şifrə uğurla dəyişdirildi.</p>
+}
+
+<form asp-area="Admin" asp-controller="Hesab" asp-action="Shifrenideyish" method="post" class="row">
+    <div class="col-12">
+        <input asp-for="CurrentPassword" class="form-group" placeholder="Köhnə şifrə">
+        <span asp-validation-for="CurrentPassword" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <input asp-for="NewPassword" class="form-group" placeholder="Təsdiq şifrəsi">
+        <span asp-validation-for="NewPassword" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <input type="submit" class="form-group btn btn-primary" value="Təsdiqlə">
+    </div>
+</form>
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+}

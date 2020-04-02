@@ -1,0 +1,35 @@
+﻿@model IQueryable<CustomUser>
+@inject UserManager<CustomUser> _userManager
+
+@{
+    int number = ViewBag.Number;
+}
+
+<table data-id="@ViewBag.DataId" class="table table-hover table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>№</th>
+            <th>Ad, Soyad</th>
+            <th>Email</th>
+            <th>Telefon</th>
+            <th>Şəkil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customUser in Model)
+        {
+            if (await _userManager.IsInRoleAsync(customUser, "İstifadəçi"))
+            {
+                <tr>
+                    <td>@(number++)</td>
+                    <td>@customUser.FirstName @customUser.LastName</td>
+                    <td>@customUser.Email</td>
+                    <td>@customUser.PhoneNumber.Substring(0, 6) @customUser.PhoneNumber.Substring(6, 7)</td>
+                    <td>
+                        <img src="~/MainPageFiles/images/users/@customUser.ProfilePictureURL" />
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

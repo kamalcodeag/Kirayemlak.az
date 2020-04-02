@@ -1,0 +1,2699 @@
+@import url(../css/common.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 1199.9px) {
+    .container-fluid {
+        width: auto;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .custom-container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #left-advertisement, #right-advertisement {
+        display: none !important;
+    }
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 100;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+    .loader-container img {
+        width: 250px;
+        height: 250px;
+    }
+
+header {
+    position: absolute;
+    z-index: 90;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+    header .container-fluid .custom-container-fluid {
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+
+        header .container-fluid .custom-container-fluid .header-items {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            height: 100px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+            header .container-fluid .custom-container-fluid .header-items .house-logo {
+                width: 100px;
+                height: 100px;
+                background-color: #c4e40d;
+            }
+
+            header .container-fluid .custom-container-fluid .header-items .nav-links {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                font-family: "Maven Pro Light 300";
+                font-size: 20px;
+                height: 50px;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+                header .container-fluid .custom-container-fluid .header-items .nav-links li {
+                    padding: 38px 5px;
+                    -webkit-transition: all .3s ease-in-out;
+                    transition: all .3s ease-in-out;
+                    cursor: pointer;
+                }
+
+                    header .container-fluid .custom-container-fluid .header-items .nav-links li:hover {
+                        background-color: #ad0028;
+                    }
+
+                    header .container-fluid .custom-container-fluid .header-items .nav-links li.page-active:hover a {
+                        color: white !important;
+                    }
+
+                header .container-fluid .custom-container-fluid .header-items .nav-links a {
+                    padding: 38px 5px;
+                    color: white;
+                }
+
+            header .container-fluid .custom-container-fluid .header-items .btn-container {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-pack: distribute;
+                justify-content: space-around;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                height: 50px;
+                padding: 0px 10px;
+                border-radius: 30px;
+                border: 2px solid white;
+                outline: none;
+                background-color: transparent;
+                overflow: hidden;
+                -webkit-transition: all .6s ease-in-out;
+                transition: all .6s ease-in-out;
+                position: relative;
+            }
+
+                header .container-fluid .custom-container-fluid .header-items .btn-container i {
+                    color: #c4e40d;
+                    font-size: 20px;
+                }
+
+                header .container-fluid .custom-container-fluid .header-items .btn-container p {
+                    color: white;
+                    font-family: "Maven Pro Light 300";
+                    font-size: 18px;
+                }
+
+                header .container-fluid .custom-container-fluid .header-items .btn-container:hover {
+                    border: 2px solid #c4e40d;
+                    background-color: white;
+                }
+
+                    header .container-fluid .custom-container-fluid .header-items .btn-container:hover i, header .container-fluid .custom-container-fluid .header-items .btn-container:hover p {
+                        color: #ad0028;
+                    }
+
+@media only screen and (max-width: 991.9px) {
+    header .nav-links {
+        display: none !important;
+    }
+
+    header .resp-nav-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+        header .resp-nav-menu .toggle-bars {
+            color: #c4e40d;
+            font-size: 60px;
+            cursor: pointer;
+        }
+
+        header .resp-nav-menu .resp-nav-links {
+            font-family: "Maven Pro Light 200";
+            font-size: 20px;
+            position: fixed;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100vh;
+            background-color: #161d21;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            z-index: 3;
+        }
+
+            header .resp-nav-menu .resp-nav-links .btn-close {
+                font-size: 60px;
+                cursor: pointer;
+                margin-bottom: 30px;
+                color: #c4e40d;
+                position: absolute;
+                top: 2%;
+                right: 2%;
+            }
+
+            header .resp-nav-menu .resp-nav-links li:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            header .resp-nav-menu .resp-nav-links a {
+                color: white;
+            }
+
+            header .resp-nav-menu .resp-nav-links .btn-container {
+                padding: 0px 100px !important;
+            }
+
+                header .resp-nav-menu .resp-nav-links .btn-container i {
+                    position: absolute;
+                    top: 50%;
+                    left: 15%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
+
+                header .resp-nav-menu .resp-nav-links .btn-container p {
+                    position: absolute;
+                    top: 50%;
+                    right: 15%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
+
+    header .resp-btn-container-col {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    header .resp-nav-menu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1399.9px) {
+    header .nav-links li a {
+        font-size: 15px;
+    }
+
+    header .btn-container p {
+        font-size: 15px !important;
+    }
+}
+
+#search-area .container-fluid {
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+    #search-area .container-fluid .search-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 67, 67, 0.5);
+    }
+
+        #search-area .container-fluid .search-overlay .search-form-container {
+            width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            z-index: 0;
+            border-radius: 50px;
+            padding: 15px;
+            background-color: rgba(175, 231, 248, 0.4);
+        }
+
+            #search-area .container-fluid .search-overlay .search-form-container form {
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+
+                #search-area .container-fluid .search-overlay .search-form-container form .search-time, #search-area .container-fluid .search-overlay .search-form-container form .search-property, #search-area .container-fluid .search-overlay .search-form-container form .search-rooms, #search-area .container-fluid .search-overlay .search-form-container form .search-square, #search-area .container-fluid .search-overlay .search-form-container form .search-price, #search-area .container-fluid .search-overlay .search-form-container form .search-location, #search-area .container-fluid .search-overlay .search-form-container form input[type="submit"] {
+                    outline: none;
+                    border: none;
+                    color: #635b5b;
+                    font-family: "Maven Pro Light 300";
+                    font-size: 15px;
+                }
+
+                #search-area .container-fluid .search-overlay .search-form-container form .search-time, #search-area .container-fluid .search-overlay .search-form-container form .search-property, #search-area .container-fluid .search-overlay .search-form-container form .search-rooms, #search-area .container-fluid .search-overlay .search-form-container form .search-square, #search-area .container-fluid .search-overlay .search-form-container form .search-price, #search-area .container-fluid .search-overlay .search-form-container form .search-location {
+                    margin-right: 10px;
+                    text-indent: 5px;
+                }
+
+                #search-area .container-fluid .search-overlay .search-form-container form .search-time, #search-area .container-fluid .search-overlay .search-form-container form .search-property, #search-area .container-fluid .search-overlay .search-form-container form .search-rooms, #search-area .container-fluid .search-overlay .search-form-container form .search-location, #search-area .container-fluid .search-overlay .search-form-container form input[type="submit"] {
+                    cursor: pointer;
+                }
+
+                #search-area .container-fluid .search-overlay .search-form-container form select {
+                    width: 103.2px;
+                    height: 38px;
+                }
+
+                #search-area .container-fluid .search-overlay .search-form-container form .search-time {
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                }
+
+                #search-area .container-fluid .search-overlay .search-form-container form input[type="submit"] {
+                    border-top-right-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    width: 120px;
+                    background-color: #ad0028;
+                    color: white;
+                    -webkit-transition: all .3s ease-in-out;
+                    transition: all .3s ease-in-out;
+                }
+
+                    #search-area .container-fluid .search-overlay .search-form-container form input[type="submit"]:hover {
+                        background-color: #444444;
+                    }
+
+                #search-area .container-fluid .search-overlay .search-form-container form .search-price {
+                    width: 90.8px;
+                }
+
+                    #search-area .container-fluid .search-overlay .search-form-container form .search-price::-webkit-input-placeholder {
+                        color: #bdb9b9;
+                    }
+
+                    #search-area .container-fluid .search-overlay .search-form-container form .search-price:-ms-input-placeholder {
+                        color: #bdb9b9;
+                    }
+
+                    #search-area .container-fluid .search-overlay .search-form-container form .search-price::-ms-input-placeholder {
+                        color: #bdb9b9;
+                    }
+
+                    #search-area .container-fluid .search-overlay .search-form-container form .search-price::placeholder {
+                        color: #bdb9b9;
+                    }
+
+                #search-area .container-fluid .search-overlay .search-form-container form .search-square {
+                    display: none;
+                }
+
+                    #search-area .container-fluid .search-overlay .search-form-container form .search-square::-webkit-input-placeholder {
+                        color: #bdb9b9;
+                    }
+
+                    #search-area .container-fluid .search-overlay .search-form-container form .search-square:-ms-input-placeholder {
+                        color: #bdb9b9;
+                    }
+
+                    #search-area .container-fluid .search-overlay .search-form-container form .search-square::-ms-input-placeholder {
+                        color: #bdb9b9;
+                    }
+
+                    #search-area .container-fluid .search-overlay .search-form-container form .search-square::placeholder {
+                        color: #bdb9b9;
+                    }
+
+@-webkit-keyframes TopLeftCloudMoving {
+    from {
+        left: -20%;
+    }
+
+    to {
+        left: 130%;
+    }
+}
+
+@keyframes TopLeftCloudMoving {
+    from {
+        left: -20%;
+    }
+
+    to {
+        left: 130%;
+    }
+}
+
+@-webkit-keyframes BottomRightCloudMoving {
+    from {
+        right: -20%;
+    }
+
+    to {
+        right: 130%;
+    }
+}
+
+@keyframes BottomRightCloudMoving {
+    from {
+        right: -20%;
+    }
+
+    to {
+        right: 130%;
+    }
+}
+
+@-webkit-keyframes MiddleTopCloudMoving {
+    from {
+        left: 30%;
+    }
+
+    to {
+        left: 130%;
+    }
+}
+
+@keyframes MiddleTopCloudMoving {
+    from {
+        left: 30%;
+    }
+
+    to {
+        left: 130%;
+    }
+}
+
+@-webkit-keyframes MiddleBottomCloudMoving {
+    from {
+        left: 10%;
+    }
+
+    to {
+        left: -20%;
+    }
+}
+
+@keyframes MiddleBottomCloudMoving {
+    from {
+        left: 10%;
+    }
+
+    to {
+        left: -20%;
+    }
+}
+
+#search-area .container-fluid .search-overlay .clouds-container img:first-child {
+    position: absolute;
+    top: 80%;
+    left: -30%;
+}
+
+#search-area .container-fluid .search-overlay .clouds-container img:nth-child(2) {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+}
+
+#search-area .container-fluid .search-overlay .clouds-container img:nth-child(3) {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+}
+
+#search-area .container-fluid .search-overlay .clouds-container img:nth-child(4) {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+}
+
+#search-area .container-fluid .search-overlay .clouds-container img:nth-child(5) {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+
+#search-area .container-fluid .search-overlay .clouds-container img:nth-child(6) {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+
+#search-area .container-fluid .search-overlay .clouds-container img:nth-child(7) {
+    position: absolute;
+    top: 60%;
+    left: -50%;
+    -webkit-animation-name: TopLeftCloudMoving;
+    animation-name: TopLeftCloudMoving;
+    -webkit-animation-duration: 240s;
+    animation-duration: 240s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+#search-area .container-fluid .search-overlay .clouds-container img:nth-child(8) {
+    position: absolute;
+    top: 80%;
+    right: -30%;
+    -webkit-animation-name: BottomRightCloudMoving;
+    animation-name: BottomRightCloudMoving;
+    -webkit-animation-duration: 180s;
+    animation-duration: 180s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+#search-area .container-fluid .search-overlay .clouds-container img:nth-child(9) {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    -webkit-animation-name: MiddleTopCloudMoving;
+    animation-name: MiddleTopCloudMoving;
+    -webkit-animation-duration: 120s;
+    animation-duration: 120s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+#search-area .container-fluid .search-overlay .clouds-container img:nth-child(10) {
+    position: absolute;
+    top: 70%;
+    left: -20%;
+    -webkit-animation-name: MiddleBottomCloudMoving;
+    animation-name: MiddleBottomCloudMoving;
+    -webkit-animation-duration: 300s;
+    animation-duration: 300s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@media only screen and (max-width: 991.9px) {
+    #search-area .clouds-container {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.9px) {
+    #search-area .search-form-container {
+        position: relative !important;
+        top: 50vh !important;
+        left: 50% !important;
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 767.9px) {
+    /*#search-area .search-form-container {
+    display: none !important;
+  }
+  #search-area .website-name-col {
+    position: relative;
+    top: 50vh;
+  }
+  #search-area .website-name-col .website-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #search-area .website-name-col .website-name h1 {
+    font-family: "Maven Pro Light 200";
+    font-size: 40px!important;
+    color: white;
+  }*/
+
+    #search-area .search-form-container {
+        background-color: transparent !important;
+        z-index: 1 !important;
+        top: 25% !important;
+    }
+
+        #search-area .search-form-container .search-area-form {
+            justify-content: flex-start !important;
+            align-items: center !important;
+            flex-direction: column !important;
+        }
+
+            #search-area .search-form-container .search-area-form select, #search-area .search-form-container .search-area-form input {
+                width: 242.2px !important;
+                height: 38px !important;
+                margin-bottom: 15px !important;
+                border-top-left-radius: 15px !important;
+                border-bottom-left-radius: 15px !important;
+                border-top-right-radius: 15px !important;
+                border-bottom-right-radius: 15px !important;
+            }
+}
+
+
+@media only screen and (min-width: 768px) {
+    #search-area .website-name-col {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399.9px) {
+    #search-area .search-form-container {
+        width: 90% !important;
+    }
+}
+
+#vip-recent-announcements .container-fluid {
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+    #vip-recent-announcements .container-fluid .vip-heading-container {
+        margin-bottom: 50px;
+    }
+
+        #vip-recent-announcements .container-fluid .vip-heading-container .vip-heading {
+            position: relative;
+            bottom: 25px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            background-color: #f5f8fa;
+        }
+
+            #vip-recent-announcements .container-fluid .vip-heading-container .vip-heading h3 {
+                padding: 20px;
+                font-family: "Maven Pro Light 300";
+                font-size: 37.5px;
+            }
+
+                #vip-recent-announcements .container-fluid .vip-heading-container .vip-heading h3 span {
+                    font-family: "Maven Pro Light 200";
+                }
+
+    #vip-recent-announcements .container-fluid .recent-heading-container {
+        margin-top: 50px;
+    }
+
+        #vip-recent-announcements .container-fluid .recent-heading-container .vip-heading {
+            position: relative;
+            bottom: 0px;
+        }
+
+    #vip-recent-announcements .container-fluid .vra-col {
+        position: relative;
+    }
+
+        #vip-recent-announcements .container-fluid .vra-col .favourite-heart-empty, #vip-recent-announcements .container-fluid .vra-col .favourite-heart-filled {
+            position: absolute;
+            top: 0%;
+            right: 5%;
+            font-size: 25px;
+            color: white;
+            cursor: pointer;
+            padding: 20px;
+            z-index: 10;
+        }
+
+        #vip-recent-announcements .container-fluid .vra-col .favourite-heart-filled {
+            display: none;
+            color: #ad0028;
+        }
+
+        #vip-recent-announcements .container-fluid .vra-col a {
+            color: unset;
+        }
+
+            #vip-recent-announcements .container-fluid .vra-col a .vip-items-container {
+                height: 320px;
+                margin-bottom: 50px;
+                -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+            }
+
+                #vip-recent-announcements .container-fluid .vra-col a .vip-items-container:hover {
+                    -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+                    box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+                }
+
+                    #vip-recent-announcements .container-fluid .vra-col a .vip-items-container:hover .vip-items-top img {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                    }
+
+                #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-top {
+                    height: 200px;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                    #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-top img {
+                        width: 100%;
+                        height: 100%;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                        -webkit-transform: scale(1.2);
+                        transform: scale(1.2);
+                        -webkit-transition: all .5s ease-in-out;
+                        transition: all .5s ease-in-out;
+                    }
+
+                    #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-top .vip-items-top-details {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        width: 95%;
+                        height: 95%;
+                        overflow: hidden;
+                    }
+
+                        #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-top .vip-items-top-details .photo-count-container {
+                            font-family: "Maven Pro Light 300";
+                            font-size: 20px;
+                            position: absolute;
+                            left: 5%;
+                            top: 10%;
+                            color: white;
+                        }
+
+                        #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-top .vip-items-top-details p {
+                            font-family: "Maven Pro Light 300";
+                            font-size: 20px;
+                            padding: 5px;
+                            background-color: #ad0028;
+                            color: white;
+                            position: absolute;
+                            bottom: 0;
+                        }
+
+                    #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-top .vip-overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(68, 67, 67, 0.4);
+                    }
+
+                #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-property-name {
+                    padding: 20px 10px 5px 10px;
+                }
+
+                    #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-property-name h4 {
+                        font-family: "Maven Pro Light 300";
+                        font-size: 25px;
+                        color: #161d21;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-announcement-location {
+                    padding: 0px 10px;
+                }
+
+                    #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-announcement-location h4 {
+                        font-family: "Maven Pro Light 300";
+                        font-size: 20px;
+                        color: #909090;
+                        word-break: break-all;
+                    }
+
+                #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-announcement-datetime {
+                    padding: 15px 10px 5px 10px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                    justify-content: space-between;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                }
+
+                    #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-announcement-datetime span {
+                        font-family: "Maven Pro Light 300";
+                        font-size: 15px;
+                    }
+
+                    #vip-recent-announcements .container-fluid .vra-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-announcement-datetime .vip-crown {
+                        font-size: 20px;
+                        color: #c4e40d;
+                    }
+
+    #vip-recent-announcements .container-fluid .load-more-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+        #vip-recent-announcements .container-fluid .load-more-container .load-more {
+            width: 100%;
+            height: 50px;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            background-color: #444444;
+            color: white;
+            font-family: "Maven Pro Light 300";
+            font-size: 25px;
+            cursor: pointer;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+        }
+
+            #vip-recent-announcements .container-fluid .load-more-container .load-more:hover {
+                background-color: #c4e40d;
+                color: #444444;
+            }
+
+@media only screen and (min-width: 1200px) and (max-width: 1349.9px) {
+    #vip-recent-announcements .vip-property-name h4 {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 575.9px) {
+    #vip-recent-announcements .vip-heading h3 {
+        font-size: 25px !important;
+    }
+}
+
+#left-advertisement {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 17.5%;
+    min-height: 100vh;
+    background-color: #f2e9d5;
+    z-index: -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /*background-image: url(../images/adv.jpg);*/
+    background-size: cover;
+}
+
+#right-advertisement {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 17.5%;
+    min-height: 100vh;
+    background-color: #f2e9d5;
+    z-index: -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /*background-image: url(../images/adv.jpg);*/
+    background-size: cover;
+}
+
+@-webkit-keyframes AdvertisementScaling {
+    from {
+        font-size: 25px;
+    }
+
+    to {
+        font-size: 20px;
+    }
+}
+
+@keyframes AdvertisementScaling {
+    from {
+        font-size: 25px;
+    }
+
+    to {
+        font-size: 20px;
+    }
+}
+
+.advertisement-container {
+    width: 80%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+    .advertisement-container h3 {
+        font-family: "Maven Pro Light 300";
+        font-size: 25px;
+        color: rgba(22, 29, 33, 0.7);
+        -webkit-animation-name: AdvertisementScaling;
+        animation-name: AdvertisementScaling;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+    }
+
+#btn-up-scroll-container {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(22, 29, 33, 0.4);
+    position: fixed;
+    bottom: 5%;
+    right: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    z-index: 10;
+}
+
+    #btn-up-scroll-container i {
+        color: white;
+        font-size: 25px;
+    }
+
+@media only screen and (max-width: 1199.9px) {
+    #btn-up-scroll-container {
+        right: 0;
+    }
+}
+
+footer .container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ad0028;
+}
+
+    footer .container-fluid .footer-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+        footer .container-fluid .footer-container .footer-copyright, footer .container-fluid .footer-container .footer-responsibility {
+            font-family: "Maven Pro Light 300";
+            font-size: 15px;
+            color: white;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        footer .container-fluid .footer-container .footer-responsibility {
+            margin-top: 20px;
+        }
+
+#layer-for-header .container-fluid {
+    height: 100px;
+    background-color: #161d21;
+}
+
+#about {
+    padding: 50px 0px;
+}
+
+    #about .about-text-container {
+        padding: 20px 0px;
+    }
+
+        #about .about-text-container p {
+            font-family: "Maven Pro Light 300";
+            font-size: 20px;
+            line-height: 35px;
+        }
+
+    #about .about-image-container {
+        width: 100%;
+        height: 300px;
+        padding: 10px 0px;
+    }
+
+        #about .about-image-container img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+#contact .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-size: cover;
+    position: relative;
+}
+
+    #contact .container-fluid .contact-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 67, 67, 0.5);
+    }
+
+    #contact .container-fluid h3 {
+        font-family: "Maven Pro Light 300";
+        font-size: 25px;
+        font-weight: 600;
+        padding-bottom: 20px;
+        color: white;
+        position: relative;
+    }
+
+    #contact .container-fluid .contact-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: relative;
+    }
+
+        #contact .container-fluid .contact-container input, #contact .container-fluid .contact-container textarea {
+            width: 100%;
+            border: none;
+            border: 1px solid rgba(245, 248, 250, 0.3);
+            border-radius: 5px;
+            outline: none;
+            text-indent: 5px;
+            color: #635b5b;
+            font-family: "Maven Pro Light 300";
+            font-size: 15px;
+            background-color: rgba(245, 248, 250, 0.9);
+        }
+
+            #contact .container-fluid .contact-container input::-webkit-input-placeholder, #contact .container-fluid .contact-container textarea::-webkit-input-placeholder {
+                color: #bdb9b9;
+            }
+
+            #contact .container-fluid .contact-container input:-ms-input-placeholder, #contact .container-fluid .contact-container textarea:-ms-input-placeholder {
+                color: #bdb9b9;
+            }
+
+            #contact .container-fluid .contact-container input::-ms-input-placeholder, #contact .container-fluid .contact-container textarea::-ms-input-placeholder {
+                color: #bdb9b9;
+            }
+
+            #contact .container-fluid .contact-container input::placeholder, #contact .container-fluid .contact-container textarea::placeholder {
+                color: #bdb9b9;
+            }
+
+            #contact .container-fluid .contact-container input:focus, #contact .container-fluid .contact-container textarea:focus {
+                box-shadow: 0px 0px 3px 1px rgba(168, 163, 163, 0.7);
+                -webkit-box-shadow: 0px 0px 3px 1px rgba(168, 163, 163, 0.7);
+                -moz-box-shadow: 0px 0px 3px 1px rgba(168, 163, 163, 0.7);
+            }
+
+        #contact .container-fluid .contact-container input {
+            height: 40px;
+            margin-bottom: 30px;
+        }
+
+        #contact .container-fluid .contact-container .input-error-message {
+            font-weight: 600;
+            color: #f6446e;
+        }
+
+        #contact .container-fluid .contact-container .contact-message {
+            margin-bottom: 20px;
+            resize: none;
+            height: 200px;
+        }
+
+        #contact .container-fluid .contact-container .contact-send {
+            width: 25%;
+            background-color: #ad0028;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+        }
+
+            #contact .container-fluid .contact-container .contact-send:hover {
+                background-color: #444444;
+            }
+
+@media only screen and (max-width: 767.9px) {
+    #contact .contact-send {
+        width: 100% !important;
+    }
+}
+
+#rules {
+    padding: 50px 0px;
+}
+
+    #rules .about-text-container {
+        padding: 20px 0px;
+    }
+
+        #rules .about-text-container p {
+            font-family: "Maven Pro Light 300";
+            font-size: 20px;
+            line-height: 35px;
+        }
+
+    #rules .about-image-container {
+        width: 100%;
+        height: 300px;
+        padding: 10px 0px;
+    }
+
+        #rules .about-image-container img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+#login .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: #f5f8fa;
+}
+
+    #login .container-fluid .login-container .input-error-message-password {
+        margin-bottom: 15px;
+    }
+
+    #login .container-fluid .login-container .login-remember-me-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    #login .container-fluid .login-container label {
+        font-family: "Maven Pro Light 300";
+        font-size: 15px;
+    }
+
+    #login .container-fluid .login-container .login-submit {
+        background-color: #ad0028;
+        margin-top: 15px;
+    }
+
+    #login .container-fluid .login-container .login-register {
+        background-color: #c4e40d;
+        margin-top: 15px;
+    }
+
+    #login .container-fluid .login-container .login-forgot-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+        #login .container-fluid .login-container .login-forgot-container .login-forgot {
+            color: #909090;
+        }
+
+@media only screen and (max-width: 767.9px) {
+    #login .login-submit, #login .login-register {
+        margin-top: 0px !important;
+    }
+}
+
+#register .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f5f8fa;
+}
+
+    #register .container-fluid .register-submit {
+        background-color: #ad0028;
+    }
+
+    #register .container-fluid .register-login {
+        background-color: #c4e40d;
+    }
+
+    #register .container-fluid .register-phone-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+        #register .container-fluid .register-phone-container .register-phone {
+            width: 70%;
+            height: 36px;
+        }
+
+#forgot-password .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+    #forgot-password .container-fluid .forgot-password-submit {
+        background-color: #ad0028;
+    }
+
+    #forgot-password .container-fluid .forgot-password-image-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+        #forgot-password .container-fluid .forgot-password-image-container img {
+            width: 250px;
+            height: 250px;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+#change-password .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+    #change-password .container-fluid .change-password-submit {
+        background-color: #ad0028;
+    }
+
+    #change-password .container-fluid .change-password-photo-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+        #change-password .container-fluid .change-password-photo-container img {
+            width: 250px;
+            height: 250px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            padding-top: 20px;
+        }
+
+#create-announcement .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+    #create-announcement .container-fluid .create-announcement-container .create-announcement-square-container {
+        display: none;
+    }
+
+    #create-announcement .container-fluid .create-announcement-container .create-announcement-message {
+        resize: none;
+        height: 200px;
+    }
+
+    #create-announcement .container-fluid .create-announcement-container label {
+        font-family: "Maven Pro Light 300";
+        font-size: 15px;
+    }
+
+    #create-announcement .container-fluid .create-announcement-container .input-error-message-rules {
+        bottom: -100%;
+    }
+
+    #create-announcement .container-fluid .create-announcement-container .create-announcement-submit {
+        margin-top: 50px;
+        background-color: #ad0028;
+    }
+
+    #create-announcement .container-fluid .create-announcement-container select, #create-announcement .container-fluid .create-announcement-container .input-upload, #create-announcement .container-fluid .create-announcement-container .input-upload-mask {
+        height: 44px !important;
+    }
+
+@media only screen and (max-width: 575.9px) {
+    #create-announcement .input-error-message {
+        font-size: 10px !important;
+    }
+}
+
+#announcement .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f5f8fa;
+    position: relative;
+}
+
+    #announcement .container-fluid .announcement-details-btn-container {
+        position: relative;
+    }
+
+        #announcement .container-fluid .announcement-details-btn-container:hover .back-icon {
+            font-size: 25px;
+        }
+
+        #announcement .container-fluid .announcement-details-btn-container .back-icon {
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            color: white;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+        }
+
+        #announcement .container-fluid .announcement-details-btn-container .announcement-details-back {
+            background-color: #c4e40d;
+        }
+
+    #announcement .container-fluid .announcement-details-edit {
+        background-color: #ad0028;
+    }
+
+    #announcement .container-fluid .announcement-details-delete {
+        background-color: #444444;
+    }
+
+    #announcement .container-fluid .announcement-container .announcement-edit-container {
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        display: none;
+    }
+
+        #announcement .container-fluid .announcement-container .announcement-edit-container .create-announcement-square-container {
+            display: none;
+        }
+
+        #announcement .container-fluid .announcement-container .announcement-edit-container .create-announcement-message {
+            resize: none;
+            height: 200px;
+        }
+
+        #announcement .container-fluid .announcement-container .announcement-edit-container label {
+            font-family: "Maven Pro Light 300";
+            font-size: 15px;
+        }
+
+        #announcement .container-fluid .announcement-container .announcement-edit-container .input-error-message-rules {
+            bottom: -100%;
+        }
+
+        #announcement .container-fluid .announcement-container .announcement-edit-container .create-announcement-submit {
+            margin-top: 50px;
+            background-color: #ad0028;
+        }
+
+        #announcement .container-fluid .announcement-container .announcement-edit-container select, #announcement .container-fluid .announcement-container .announcement-edit-container .input-upload, #announcement .container-fluid .announcement-container .announcement-edit-container .input-upload-mask {
+            height: 44px !important;
+        }
+
+    #announcement .container-fluid .announcement-container .announcement-delete-container-col {
+        position: absolute;
+        z-index: 5;
+        top: 30%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: #161d21;
+        width: 400px;
+        height: 200px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+        #announcement .container-fluid .announcement-container .announcement-delete-container-col p {
+            font-family: "Maven Pro Light 300";
+            font-size: 25px;
+            text-align: center;
+            color: white;
+        }
+
+        #announcement .container-fluid .announcement-container .announcement-delete-container-col .announcement-delete-yes, #announcement .container-fluid .announcement-container .announcement-delete-container-col .announcement-delete-no {
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        #announcement .container-fluid .announcement-container .announcement-delete-container-col .announcement-delete-yes {
+            background-color: #635b5b;
+        }
+
+        #announcement .container-fluid .announcement-container .announcement-delete-container-col .announcement-delete-no {
+            background-color: #635b5b;
+        }
+
+            #announcement .container-fluid .announcement-container .announcement-delete-container-col .announcement-delete-no:hover {
+                background-color: #c4e40d !important;
+            }
+
+    #announcement .container-fluid .announcement-container .announcement-heading-container {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+        #announcement .container-fluid .announcement-container .announcement-heading-container .page-heading-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            border-bottom: 1px solid #909090;
+        }
+
+            #announcement .container-fluid .announcement-container .announcement-heading-container .page-heading-container .announcement-type, #announcement .container-fluid .announcement-container .announcement-heading-container .page-heading-container .announcement-price {
+                font-size: 36px;
+            }
+
+            #announcement .container-fluid .announcement-container .announcement-heading-container .page-heading-container .announcement-price {
+                color: #ad0028;
+            }
+
+        #announcement .container-fluid .announcement-container .announcement-heading-container .announcement-location-vip-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+            #announcement .container-fluid .announcement-container .announcement-heading-container .announcement-location-vip-container .location-icon, #announcement .container-fluid .announcement-container .announcement-heading-container .announcement-location-vip-container .announcement-location {
+                font-size: 15px;
+                color: #909090;
+            }
+
+            #announcement .container-fluid .announcement-container .announcement-heading-container .announcement-location-vip-container .announcement-location {
+                font-family: "Maven Pro Light 300";
+            }
+
+            #announcement .container-fluid .announcement-container .announcement-heading-container .announcement-location-vip-container .vip-crown {
+                color: #c4e40d;
+            }
+
+        #announcement .container-fluid .announcement-container .announcement-heading-container .announcement-time-viewcount-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+            #announcement .container-fluid .announcement-container .announcement-heading-container .announcement-time-viewcount-container .calendar-icon, #announcement .container-fluid .announcement-container .announcement-heading-container .announcement-time-viewcount-container .announcement-time {
+                font-size: 15px;
+                color: #909090;
+            }
+
+            #announcement .container-fluid .announcement-container .announcement-heading-container .announcement-time-viewcount-container .announcement-time {
+                font-family: "Maven Pro Light 300";
+            }
+
+            #announcement .container-fluid .announcement-container .announcement-heading-container .announcement-time-viewcount-container .eye-icon, #announcement .container-fluid .announcement-container .announcement-heading-container .announcement-time-viewcount-container .announcement-viewcount {
+                font-size: 15px;
+                color: #909090;
+            }
+
+            #announcement .container-fluid .announcement-container .announcement-heading-container .announcement-time-viewcount-container .announcement-viewcount {
+                font-family: "Maven Pro Light 300";
+            }
+
+    #announcement .container-fluid .announcement-container .announcement-slider-container {
+        margin-top: 10px;
+        margin-bottom: 40px;
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+    }
+
+        #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame {
+            margin-left: -16px;
+            margin-right: -16px;
+            position: absolute;
+            width: 100%;
+        }
+
+            #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .announcement-slider-overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(68, 67, 67, 0.2);
+                z-index: 1;
+            }
+
+            #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .big-left-arrow {
+                position: absolute;
+                left: 3%;
+                top: 35%;
+                font-size: 45px;
+                color: white;
+                z-index: 2;
+                cursor: pointer;
+            }
+
+            #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .big-right-arrow {
+                position: absolute;
+                right: 3%;
+                top: 35%;
+                font-size: 45px;
+                color: white;
+                z-index: 2;
+                cursor: pointer;
+            }
+
+            #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .announcement-slider-photos {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                position: relative;
+                left: 0px;
+                -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+            }
+
+                #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .announcement-slider-photos li {
+                    width: 100%;
+                    height: 350px;
+                }
+
+                    #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .announcement-slider-photos li img {
+                        width: 100%;
+                        height: 350px;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                    }
+
+            #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .small-left-arrow {
+                position: absolute;
+                left: 3%;
+                bottom: 12%;
+                font-size: 25px;
+                color: white;
+                z-index: 2;
+                cursor: pointer;
+            }
+
+            #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .small-right-arrow {
+                position: absolute;
+                right: 3%;
+                bottom: 12%;
+                font-size: 25px;
+                color: white;
+                z-index: 2;
+                cursor: pointer;
+            }
+
+            #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .announcement-slider-thumbnail {
+                margin-top: 8px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                position: relative;
+                left: 0px;
+                -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+            }
+
+                #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .announcement-slider-thumbnail li {
+                    width: 25%;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    cursor: pointer;
+                }
+
+                    #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .announcement-slider-thumbnail li img {
+                        width: 100%;
+                        height: 149px;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                    }
+
+                    #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .announcement-slider-thumbnail li:first-child {
+                        margin-left: 12px;
+                    }
+
+                    #announcement .container-fluid .announcement-container .announcement-slider-container .announcement-slider-frame .announcement-slider-thumbnail li:not(:last-child) {
+                        margin-right: 12px;
+                    }
+
+    #announcement .container-fluid .announcement-container .announcement-details {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+        #announcement .container-fluid .announcement-container .announcement-details .announcement-area-rooms-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding-bottom: 30px;
+        }
+
+            #announcement .container-fluid .announcement-container .announcement-details .announcement-area-rooms-container .announcement-area, #announcement .container-fluid .announcement-container .announcement-details .announcement-area-rooms-container .announcement-area-dimension, #announcement .container-fluid .announcement-container .announcement-details .announcement-area-rooms-container .announcement-rooms, #announcement .container-fluid .announcement-container .announcement-details .announcement-area-rooms-container .announcement-rooms-count {
+                font-family: "Maven Pro Light 300";
+                font-size: 20px;
+                color: #161d21;
+            }
+
+            #announcement .container-fluid .announcement-container .announcement-details .announcement-area-rooms-container .announcement-area, #announcement .container-fluid .announcement-container .announcement-details .announcement-area-rooms-container .announcement-rooms {
+                font-weight: 600;
+            }
+
+        #announcement .container-fluid .announcement-container .announcement-details .announcement-info {
+            font-family: "Maven Pro Light 300";
+            font-size: 15px;
+            color: #161d21;
+            line-height: 25px;
+        }
+
+    #announcement .container-fluid .announcement-right-side {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    }
+
+    #announcement .container-fluid .announcement-seller-container {
+        -webkit-box-shadow: 0px 2px 7px -1px rgba(22, 29, 33, 0.15);
+        box-shadow: 0px 2px 7px -1px rgba(22, 29, 33, 0.15);
+        position: relative;
+        bottom: 0;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+
+        #announcement .container-fluid .announcement-seller-container:hover {
+            -webkit-box-shadow: 0 3px 18px 5px rgba(7, 152, 255, 0.15);
+            box-shadow: 0 3px 18px 5px rgba(7, 152, 255, 0.15);
+            bottom: 5px;
+        }
+
+            #announcement .container-fluid .announcement-seller-container:hover img {
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+
+        #announcement .container-fluid .announcement-seller-container .announcement-seller-photo-container {
+            width: 100%;
+            height: 200px;
+            background-color: #444444;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+            #announcement .container-fluid .announcement-seller-container .announcement-seller-photo-container img {
+                width: 100%;
+                height: 200px;
+                -o-object-fit: cover;
+                object-fit: cover;
+                -webkit-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+            }
+
+        #announcement .container-fluid .announcement-seller-container .announcement-seller-details-container {
+            background-color: white;
+            padding: 30px;
+        }
+
+            #announcement .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-fullname, #announcement .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-profession {
+                font-family: "Maven Pro Light 300";
+            }
+
+            #announcement .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-fullname {
+                font-size: 25px;
+                font-weight: 600;
+                padding-bottom: 5px;
+                color: #161d21;
+            }
+
+            #announcement .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-profession {
+                color: #909090;
+            }
+
+            #announcement .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-email-container {
+                padding-top: 30px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+                #announcement .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-email-container .envelope-icon {
+                    color: #ad0028;
+                }
+
+                #announcement .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-email-container .announcement-seller-email {
+                    padding-left: 10px;
+                    font-family: "Maven Pro Light 300";
+                    font-size: 15px;
+                    color: #ad0028;
+                }
+
+            #announcement .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-phone-container {
+                padding-top: 10px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+                #announcement .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-phone-container .phone-icon {
+                    padding-left: 3px;
+                    color: #ad0028;
+                }
+
+                #announcement .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-phone-container .announcement-seller-phone {
+                    padding-left: 10px;
+                    font-family: "Maven Pro Light 300";
+                    font-size: 15px;
+                    color: #ad0028;
+                }
+
+@media only screen and (min-width: 992px) and (max-width: 1199.9px) {
+    #announcement .announcement-slider-container {
+        height: 600px !important;
+    }
+
+    #announcement .big-left-arrow, #announcement .big-right-arrow {
+        top: 30% !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.9px) {
+    #announcement .announcement-slider-container {
+        height: 350px !important;
+    }
+}
+
+@media only screen and (max-width: 767.9px) {
+    #announcement .announcement-delete-container-col {
+        width: 250px !important;
+        height: 150px !important;
+    }
+
+        #announcement .announcement-delete-container-col p {
+            font-size: 25px !important;
+        }
+
+    #announcement .announcement-slider-container {
+        height: 350px !important;
+    }
+}
+
+@media only screen and (max-width: 575.9px) {
+    #announcement .announcement-type, #announcement .announcement-price {
+        font-size: 20px !important;
+    }
+
+    #announcement .announcement-location, #announcement .announcement-time, #announcement .announcement-viewcount {
+        font-size: 10px !important;
+    }
+
+    #announcement .input-error-message {
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 991.9px) {
+    #announcement .small-left-arrow, #announcement .small-right-arrow {
+        display: none !important;
+    }
+
+    #announcement .big-left-arrow, #announcement .big-right-arrow {
+        top: 45% !important;
+    }
+
+    #announcement .announcement-slider-thumbnail {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.9px) {
+    #announcement .small-left-arrow, #announcement .small-right-arrow {
+        bottom: 20% !important;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    #announcement .small-left-arrow, #announcement .small-right-arrow {
+        bottom: 22% !important;
+        font-size: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #announcement .announcement-details {
+        padding-top: 0 !important;
+        margin-top: -100px !important;
+    }
+}
+
+#user-announcements .container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ecfffc;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+    #user-announcements .container-fluid .user-announcements-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(245, 248, 250, 0.8);
+    }
+
+    #user-announcements .container-fluid .announcement-seller-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    #user-announcements .container-fluid .announcement-seller-container {
+        -webkit-box-shadow: 0px 2px 7px -1px rgba(22, 29, 33, 0.15);
+        box-shadow: 0px 2px 7px -1px rgba(22, 29, 33, 0.15);
+        position: relative;
+        bottom: 0;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        z-index: 5;
+    }
+
+        #user-announcements .container-fluid .announcement-seller-container .announcement-seller-photo-container {
+            width: 100%;
+            height: 200px;
+            background-color: #444444;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+            #user-announcements .container-fluid .announcement-seller-container .announcement-seller-photo-container img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                -webkit-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+            }
+
+        #user-announcements .container-fluid .announcement-seller-container .announcement-seller-details-container {
+            background-color: white;
+            padding: 20px;
+        }
+
+            #user-announcements .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-fullname, #user-announcements .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-profession {
+                font-family: "Maven Pro Light 300";
+            }
+
+            #user-announcements .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-fullname {
+                font-size: 20px;
+                font-weight: 600;
+                padding-bottom: 5px;
+                color: #161d21;
+                word-break: break-all;
+            }
+
+            #user-announcements .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-profession {
+                color: #909090;
+            }
+
+            #user-announcements .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-email-container {
+                padding-top: 30px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+                #user-announcements .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-email-container .envelope-icon {
+                    color: #ad0028;
+                }
+
+                #user-announcements .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-email-container .announcement-seller-email {
+                    padding-left: 10px;
+                    font-family: "Maven Pro Light 300";
+                    font-size: 15px;
+                    color: #ad0028;
+                    word-break: break-all;
+                }
+
+            #user-announcements .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-phone-container {
+                padding-top: 10px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+                #user-announcements .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-phone-container .phone-icon {
+                    padding-left: 3px;
+                    color: #ad0028;
+                }
+
+                #user-announcements .container-fluid .announcement-seller-container .announcement-seller-details-container .announcement-seller-phone-container .announcement-seller-phone {
+                    padding-left: 10px;
+                    font-family: "Maven Pro Light 300";
+                    font-size: 15px;
+                    color: #ad0028;
+                    word-break: break-all;
+                }
+
+    #user-announcements .container-fluid .vip-heading-container {
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 5;
+    }
+
+        #user-announcements .container-fluid .vip-heading-container .vip-heading {
+            margin-top: 50px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            background-color: rgba(196, 228, 13, 0.5);
+            -webkit-box-shadow: 0px 2px 7px -1px rgba(22, 29, 33, 0.15);
+            box-shadow: 0px 2px 7px -1px rgba(22, 29, 33, 0.15);
+        }
+
+            #user-announcements .container-fluid .vip-heading-container .vip-heading h3 {
+                padding: 20px;
+                font-family: "Maven Pro Light 300";
+                font-size: 37.5px;
+            }
+
+                #user-announcements .container-fluid .vip-heading-container .vip-heading h3 span {
+                    font-family: "Maven Pro Light 200";
+                }
+
+    #user-announcements .container-fluid .ua-col {
+        position: relative;
+    }
+
+        #user-announcements .container-fluid .ua-col .favourite-heart-empty, #user-announcements .container-fluid .ua-col .favourite-heart-filled {
+            position: absolute;
+            top: 0%;
+            right: 5%;
+            font-size: 25px;
+            color: white;
+            cursor: pointer;
+            padding: 20px;
+            z-index: 10;
+        }
+
+        #user-announcements .container-fluid .ua-col .favourite-heart-filled {
+            display: none;
+            color: #ad0028;
+        }
+
+        #user-announcements .container-fluid .ua-col a {
+            color: unset;
+        }
+
+            #user-announcements .container-fluid .ua-col a .vip-items-container {
+                margin-bottom: 50px;
+                -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+                position: relative;
+                z-index: 5;
+            }
+
+                #user-announcements .container-fluid .ua-col a .vip-items-container:hover {
+                    -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+                    box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+                }
+
+                    #user-announcements .container-fluid .ua-col a .vip-items-container:hover .vip-items-top img {
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
+                    }
+
+                #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-top {
+                    height: 200px;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                    #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-top img {
+                        width: 100%;
+                        height: 100%;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                        -webkit-transform: scale(1.2);
+                        transform: scale(1.2);
+                        -webkit-transition: all .5s ease-in-out;
+                        transition: all .5s ease-in-out;
+                    }
+
+                    #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-top .vip-items-top-details {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        width: 95%;
+                        height: 95%;
+                        overflow: hidden;
+                    }
+
+                        #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-top .vip-items-top-details .photo-count-container {
+                            font-family: "Maven Pro Light 300";
+                            font-size: 20px;
+                            position: absolute;
+                            left: 5%;
+                            top: 10%;
+                            color: white;
+                        }
+
+                        #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-top .vip-items-top-details p {
+                            font-family: "Maven Pro Light 300";
+                            font-size: 20px;
+                            padding: 5px;
+                            background-color: #ad0028;
+                            color: white;
+                            position: absolute;
+                            bottom: 0;
+                        }
+
+                    #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-top .vip-overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(68, 67, 67, 0.4);
+                    }
+
+                #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-bottom {
+                    background-color: white;
+                }
+
+                    #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-property-name {
+                        padding: 20px 10px 5px 10px;
+                    }
+
+                        #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-property-name h4 {
+                            font-family: "Maven Pro Light 300";
+                            font-size: 25px;
+                            color: #161d21;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                    #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-announcement-location {
+                        padding: 0px 10px;
+                    }
+
+                        #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-announcement-location h4 {
+                            font-family: "Maven Pro Light 300";
+                            font-size: 20px;
+                            color: #909090;
+                            word-break: break-all;
+                        }
+
+                    #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-announcement-datetime {
+                        padding: 15px 10px 5px 10px;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                    }
+
+                        #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-announcement-datetime span {
+                            font-family: "Maven Pro Light 300";
+                            font-size: 15px;
+                        }
+
+                        #user-announcements .container-fluid .ua-col a .vip-items-container .vip-items-bottom .vip-items-bottom-details .vip-announcement-datetime .vip-crown {
+                            font-size: 20px;
+                            color: #c4e40d;
+                        }
+
+    #user-announcements .container-fluid .load-more-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: relative;
+        z-index: 5;
+    }
+
+        #user-announcements .container-fluid .load-more-container .load-more {
+            width: 100%;
+            height: 50px;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            background-color: #444444;
+            color: white;
+            font-family: "Maven Pro Light 300";
+            font-size: 25px;
+            cursor: pointer;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+        }
+
+            #user-announcements .container-fluid .load-more-container .load-more:hover {
+                background-color: #c4e40d;
+                color: #444444;
+            }
+
+@media only screen and (max-width: 767.9px) {
+    #user-announcements .announcement-seller-details-container {
+        padding: 15px !important;
+    }
+
+        #user-announcements .announcement-seller-details-container .announcement-seller-fullname, #user-announcements .announcement-seller-details-container .announcement-seller-profession {
+            font-size: 15px !important;
+        }
+
+        #user-announcements .announcement-seller-details-container .announcement-seller-email, #user-announcements .announcement-seller-details-container .announcement-seller-phone, #user-announcements .announcement-seller-details-container .envelope-icon, #user-announcements .announcement-seller-details-container .phone-icon {
+            font-size: 10px !important;
+        }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.9px) {
+    #user-announcements .col-xs-9 {
+        -ms-flex-preferred-size: 50% !important;
+        flex-basis: 50% !important;
+        max-width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 575.9px) {
+    #user-announcements .vip-heading-container .vip-heading h3 {
+        font-size: 20px !important;
+    }
+}
+
+#my-profile .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+    #my-profile .container-fluid .my-profile-info-row-top {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+        #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container {
+            -webkit-box-shadow: 0px 2px 7px -1px rgba(22, 29, 33, 0.15);
+            box-shadow: 0px 2px 7px -1px rgba(22, 29, 33, 0.15);
+            position: relative;
+            bottom: 0;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            z-index: 5;
+        }
+
+            #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-photo-container {
+                width: 100%;
+                height: 200px;
+                background-color: #444444;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                overflow: hidden;
+            }
+
+                #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-photo-container img {
+                    width: 100%;
+                    height: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    -webkit-transition: all .3s ease-in-out;
+                    transition: all .3s ease-in-out;
+                }
+
+            #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-details-container {
+                background-color: white;
+                padding: 20px;
+            }
+
+                #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-details-container .announcement-seller-fullname, #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-details-container .announcement-seller-profession {
+                    font-family: "Maven Pro Light 300";
+                }
+
+                #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-details-container .announcement-seller-fullname {
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding-bottom: 5px;
+                    color: #161d21;
+                    word-break: break-all;
+                }
+
+                #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-details-container .announcement-seller-profession {
+                    color: #909090;
+                }
+
+                #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-details-container .announcement-seller-email-container {
+                    padding-top: 30px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                }
+
+                    #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-details-container .announcement-seller-email-container .envelope-icon {
+                        color: #ad0028;
+                    }
+
+                    #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-details-container .announcement-seller-email-container .announcement-seller-email {
+                        padding-left: 10px;
+                        font-family: "Maven Pro Light 300";
+                        font-size: 15px;
+                        color: #ad0028;
+                        word-break: break-all;
+                    }
+
+                #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-details-container .announcement-seller-phone-container {
+                    padding-top: 10px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                }
+
+                    #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-details-container .announcement-seller-phone-container .phone-icon {
+                        padding-left: 3px;
+                        color: #ad0028;
+                    }
+
+                    #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-container .announcement-seller-container .announcement-seller-details-container .announcement-seller-phone-container .announcement-seller-phone {
+                        padding-left: 10px;
+                        font-family: "Maven Pro Light 300";
+                        font-size: 15px;
+                        color: #ad0028;
+                        word-break: break-all;
+                    }
+
+        #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-btn-container {
+            position: relative;
+        }
+
+            #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-btn-container:hover .pen-icon {
+                font-size: 20px;
+            }
+
+            #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-btn-container .pen-icon {
+                position: absolute;
+                top: 50%;
+                left: 5%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                color: white;
+                -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+            }
+
+            #my-profile .container-fluid .my-profile-info-row-top .my-profile-info-btn-container .my-profile-info-btn {
+                background-color: #444444;
+                color: white;
+            }
+
+    #my-profile .container-fluid .my-profile-tab-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        cursor: pointer;
+    }
+
+        #my-profile .container-fluid .my-profile-tab-container .my-profile-tab {
+            font-family: "Maven Pro Light 300";
+            font-size: 15px;
+            padding: 10px 20px;
+            background-color: #ad0028;
+            color: white;
+        }
+
+            #my-profile .container-fluid .my-profile-tab-container .my-profile-tab:not(:last-child) {
+                border-right: 3px solid white;
+            }
+
+    #my-profile .container-fluid .my-profile-details-container {
+        padding: 0px 20px;
+        position: relative;
+    }
+
+        #my-profile .container-fluid .my-profile-details-container .my-profile-details-loader-container {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+        }
+
+        #my-profile .container-fluid .my-profile-details-container table {
+            font-family: "Maven Pro Light 300";
+            font-size: 15px;
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+        }
+
+            #my-profile .container-fluid .my-profile-details-container table .table-info-icon-container {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+
+                #my-profile .container-fluid .my-profile-details-container table .table-info-icon-container .info-icon {
+                    cursor: pointer;
+                }
+
+@media only screen and (max-width: 767.9px) {
+    #my-profile .announcement-seller-details-container {
+        padding: 15px !important;
+    }
+
+        #my-profile .announcement-seller-details-container .announcement-seller-fullname {
+            font-size: 15px !important;
+        }
+
+        #my-profile .announcement-seller-details-container .announcement-seller-email, #my-profile .announcement-seller-details-container .announcement-seller-phone, #my-profile .announcement-seller-details-container .envelope-icon, #my-profile .announcement-seller-details-container .phone-icon {
+            font-size: 10px !important;
+        }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.9px) {
+    #my-profile .col-xs-9 {
+        -ms-flex-preferred-size: 50% !important;
+        flex-basis: 50% !important;
+        max-width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 991.9px) {
+    #my-profile .my-profile-info-btn-col {
+        padding-top: 30px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.9px) {
+    #my-profile .my-profile-tab, #my-profile .my-profile-details {
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 767.9px) {
+    #my-profile .my-profile-tab-container, #my-profile .my-profile-details-container {
+        display: none !important;
+    }
+}
+
+#user-details .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f5f8fa;
+}
+
+    #user-details .container-fluid .user-details-submit {
+        background-color: #ad0028;
+    }
+
+    #user-details .container-fluid .user-details-btn-container {
+        position: relative;
+    }
+
+        #user-details .container-fluid .user-details-btn-container:hover .back-icon {
+            font-size: 25px;
+        }
+
+        #user-details .container-fluid .user-details-btn-container .back-icon {
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            color: white;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+        }
+
+        #user-details .container-fluid .user-details-btn-container .user-details-back {
+            background-color: #c4e40d;
+        }
+
+    #user-details .container-fluid .user-details-phone-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+        #user-details .container-fluid .user-details-phone-container .user-details-phone {
+            width: 70%;
+            height: 36px;
+        }
+
+#confirmation .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+    #confirmation .container-fluid .confirmation-success-icon-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+@-webkit-keyframes SuccessIconRotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes SuccessIconRotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#confirmation .container-fluid .confirmation-success-icon-container .success-icon {
+    font-size: 120px;
+    color: #ad0028;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+}
+
+#confirmation .container-fluid .confirmation-login {
+    background-color: #c4e40d;
+}
+
+.error-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+    .error-container .error-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 67, 67, 0.3);
+    }
+
+    .error-container h1 {
+        font-family: "Maven Pro Light 200";
+        font-size: 120px;
+        color: white;
+        position: relative;
+        z-index: 1;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .error-container .announcement-details-btn-container {
+        position: relative;
+        margin-top: 50px;
+    }
+
+        .error-container .announcement-details-btn-container .announcement-details-back {
+            background-color: rgba(196, 228, 13, 0.9);
+            font-weight: 300;
+            font-size: 15px;
+        }
+
+            .error-container .announcement-details-btn-container .announcement-details-back:hover {
+                background-color: #c4e40d !important;
+                font-size: 25px !important;
+            }
+
+@media only screen and (max-width: 575.9px) {
+    .error-container h1 {
+        font-size: 39px !important;
+    }
+}
+
+@media only screen and (min-width: 575.9px) and (max-width: 767.9px) {
+    .error-container h1 {
+        font-size: 81px !important;
+    }
+}

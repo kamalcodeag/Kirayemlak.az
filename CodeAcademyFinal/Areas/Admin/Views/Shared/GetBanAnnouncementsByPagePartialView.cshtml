@@ -1,0 +1,37 @@
+﻿@model IQueryable<Announcement>
+
+@{
+    int number = ViewBag.Number;
+}
+
+    <table data-id="@ViewBag.DataId" class="table table-hover table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>№</th>
+                <th>Mülk</th>
+                <th>Sahə(sot, m²)</th>
+                <th>Otaq sayı</th>
+                <th>Qiymət(ay)</th>
+                <th>Qiymət(gün)</th>
+                <th>Tarix</th>
+                <th>Şəhər(rayon)</th>
+                <th>Əlaqədar şəxs</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var bannedAnnouncement in Model)
+            {
+                <tr>
+                    <td>@(number++)</td>
+                    <td>@bannedAnnouncement.Estate.EstateName</td>
+                    <td>@(bannedAnnouncement.Estate.EstateName != "Torpaq" ? bannedAnnouncement.Area + " m²" : bannedAnnouncement.Area.ToString().Substring(0, bannedAnnouncement.Area.ToString().Length - 3) + " sot")</td>
+                    <td>@(bannedAnnouncement.Room != null ? bannedAnnouncement.Room.RoomType : "-")</td>
+                    <td>@(bannedAnnouncement.Duration.DurationType == "Aylıq" ? bannedAnnouncement.Price.ToString() + " AZN" : "-")</td>
+                    <td>@(bannedAnnouncement.Duration.DurationType == "Günlük" ? bannedAnnouncement.Price.ToString() + " AZN" : "-")</td>
+                    <td>@bannedAnnouncement.PublishDate.Day  @bannedAnnouncement.Month.MonthName @bannedAnnouncement.PublishDate.Year</td>
+                    <td>@bannedAnnouncement.City.CityName</td>
+                    <td>@bannedAnnouncement.CustomUser.FirstName @bannedAnnouncement.CustomUser.LastName</td>
+                </tr>
+            }
+        </tbody>
+    </table>

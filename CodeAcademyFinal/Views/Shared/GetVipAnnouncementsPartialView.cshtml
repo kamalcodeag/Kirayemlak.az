@@ -1,0 +1,43 @@
+﻿@model IQueryable<Announcement>
+
+@foreach (var vipAnnouncement in Model)
+{
+    <div class="vra-col col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="3000">
+        <i data-info="@vipAnnouncement.Estate.EstateName@vipAnnouncement.Id@vipAnnouncement.CustomUserId" class="far fa-heart favourite-heart-empty"></i>
+        <i data-info="@vipAnnouncement.Estate.EstateName@vipAnnouncement.Id@vipAnnouncement.CustomUserId" class="fas fa-heart favourite-heart-filled"></i>
+        <a asp-controller="Elanlar" asp-action="Elan" asp-route-id="@vipAnnouncement.Id" class="text-decoration-none">
+            <div class="vip-items-container">
+                <div class="vip-items-top">
+                    <img src="~/MainPageFiles/images/announcements/@vipAnnouncement.AnnouncementPhotos.FirstOrDefault().AnnouncementPhotoURL">
+                    <div class="vip-overlay"></div>
+                    <div class="vip-items-top-details">
+                        <div class="photo-count-container">
+                            <i class="fas fa-camera camera-photo"></i>
+                            <span>@vipAnnouncement.AnnouncementPhotos.Count()</span>
+                        </div>
+                        <p>@vipAnnouncement.Price AZN / @(vipAnnouncement.Duration.DurationType == "Aylıq" ? "ay" : "gün")</p>
+                    </div>
+                </div>
+                <div class="vip-items-bottom">
+                    <div class="vip-items-bottom-details">
+                        <div class="vip-property-name">
+                            <h4>@vipAnnouncement.Estate.EstateName - @(vipAnnouncement.Estate.EstateName == "Mənzil" || vipAnnouncement.Estate.EstateName == "Ev/Villa" ? vipAnnouncement.Room.RoomType : (vipAnnouncement.Estate.EstateName == "Torpaq" ? vipAnnouncement.Area.ToString().Substring(0, vipAnnouncement.Area.ToString().Length - 3) + " sot" : vipAnnouncement.Area + " m²"))</h4>
+                        </div>
+                        <div class="vip-announcement-location">
+                            <h4>@vipAnnouncement.City.CityName</h4>
+                        </div>
+                        <div class="vip-announcement-datetime">
+                            <span>@vipAnnouncement.PublishDate.Day @vipAnnouncement.Month.MonthName @vipAnnouncement.PublishDate.Year</span>
+                            @if (vipAnnouncement.IsVIP == true)
+                            {
+                                <i class="fas fa-crown vip-crown"></i>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+}
+<input class="count-for-vip-announcements" type="hidden" value="@ViewBag.Count" />
+

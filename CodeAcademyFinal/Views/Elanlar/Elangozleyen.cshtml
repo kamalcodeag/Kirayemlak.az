@@ -1,0 +1,301 @@
+﻿@model AnnouncementViewModel
+
+<!-- LAYER FOR HEADER section start -->
+<section id="layer-for-header">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+        </div>
+    </div>
+</section>
+<!-- LAYER FOR HEADER section end -->
+<!-- ANNOUNCEMENT section start -->
+<section id="announcement">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-lg-8 announcement-left-side">
+                    <div class="row announcement-blur">
+                        <div class="col-xs-12">
+                            @if (TempData["ValidationError"] != null)
+                            {
+                                <input class="validation-error-for-update" type="hidden" value="1" />
+                            }
+                        </div>
+                        <div class="col-xs-12">
+                            @if (ViewBag.AuthorUser != null)
+                            {
+                                <a asp-controller="Hesab" asp-action="Menimhesabim"
+                                   class="announcement-details-btn-container text-decoration-none">
+                                    <i class="fas fa-long-arrow-alt-left back-icon"></i>
+                                    <input class="announcement-details-back input-login-register-pages input-btn-login-register"
+                                           type="button" value="Geri qayıt">
+                                </a>
+                            }
+                        </div>
+                        @if (ViewBag.AuthorUser != null)
+                        {
+                            <div class="col-xs-12 col-sm-6">
+                                <input class="announcement-details-edit input-login-register-pages input-btn-login-register"
+                                       type="button" value="Düzəliş et">
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <input class="announcement-details-delete input-login-register-pages input-btn-login-register"
+                                       type="button" value="Sil">
+                            </div>
+                        }
+                    </div>
+                    <div class="row announcement-container">
+                        @if (ViewBag.AuthorUser != null)
+                        {
+                            <div class="col-xs-12 announcement-edit-container-col announcement-blur">
+                                <form asp-controller="Elanlar" asp-action="Elanaduzelishet" asp-route-id="@ViewBag.AnnouncementId" method="post" enctype="multipart/form-data" class="row announcement-edit-container">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <div asp-validation-summary="ModelOnly" class="input-error-message-summary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <select asp-for="EstateId" asp-items="@(new SelectList(ViewBag.Estates, "Id", "EstateName", ViewBag.SelectedEstateId))" class="create-announcement-property input-login-register-pages"></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <select asp-for="RoomId" asp-items="@(new SelectList(ViewBag.Rooms, "Id", "RoomType", ViewBag.SelectedRoomId))" class="create-announcement-rooms input-login-register-pages"></select>
+                                            <div class="create-announcement-square-container">
+                                                <input asp-for="AreaForView" data-val="true" data-val-number="Zəhmət olmasa, düzgün parameter daxil edin" data-val-required="Zəhmət olmasa, boşluğu doldurun" class="create-announcement-square input-login-register-pages"
+                                                       value="@ViewBag.AreaForView" placeholder="Sahə(sot,m²)">
+                                                <span data-valmsg-for="AreaForView" data-valmsg-replace="true" class="input-error-message"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <div class="create-announcement-square-container-for-specials">
+                                                <input asp-for="Area" data-val="true" data-val-number="Zəhmət olmasa, düzgün parameter daxil edin" data-val-required="Zəhmət olmasa, boşluğu doldurun" class="create-announcement-square input-login-register-pages"
+                                                       value="@ViewBag.Area" placeholder="Sahə(sot,m²)">
+                                                <span data-valmsg-for="Area" data-valmsg-replace="true" class="input-error-message"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <select asp-for="DurationId" asp-items="@(new SelectList(ViewBag.Durations, "Id", "DurationType", ViewBag.DurationId))" class="create-announcement-time input-login-register-pages"></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <input asp-for="Price" class="create-announcement-price input-login-register-pages"
+                                                   min="0" value="@ViewBag.Price" placeholder="Qiymət(AZN)">
+                                            <span asp-validation-for="Price" class="input-error-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="form-group">
+                                            <select asp-for="CityId" asp-items="@(new SelectList(ViewBag.Cities, "Id", "CityName", ViewBag.CityId))" class="create-announcement-location input-login-register-pages"></select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <input asp-for="UploadFiles" class="create-announcement-input-upload input-upload input-login-register-pages"
+                                                   multiple>
+                                            <i class="fas fa-upload"></i>
+                                            <input class="input-upload-mask input-login-register-pages" type="button"
+                                                   value="Şəkillər yüklə(minimum 4)">
+                                            <span class="register-message">@*3 şəkil seçilib*@</span>
+                                            <span asp-validation-for="UploadFiles" class="input-error-message">@*Şəkillərin sayı 4-dən az ola bilməz*@</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <textarea asp-for="Details" class="create-announcement-message input-login-register-pages"
+                                                      placeholder="Ətraflı məlumat" style="text-indent:5px;">
+                                                       @ViewBag.Details
+                                            </textarea>
+                                            <span asp-validation-for="Details" class="input-error-message contact-message-input-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <input asp-for="IsVIP" type="checkbox">
+                                            <label>VIP</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <input class="create-announcement-submit input-login-register-pages input-btn-login-register"
+                                                   type="submit" value="Dəyişiklikləri yadda saxla">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xs-12 announcement-delete-container-col">
+                                <form asp-controller="Elanlar" asp-action="Elanisil" asp-route-id="@ViewBag.AnnouncementId" method="post" class="row announcement-delete-container">
+                                    <div class="col-xs-12">
+                                        <p>Seçilmiş elanı silməyə əminsiniz ?</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input class="announcement-delete-yes input-login-register-pages input-btn-login-register"
+                                               type="submit" value="Bəli">
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input class="announcement-delete-no input-login-register-pages input-btn-login-register"
+                                               type="button" value="Xeyr">
+                                    </div>
+                                </form>
+                            </div>
+
+
+                            <div class="announcement-heading-container announcement-blur">
+                                <div class="col-xs-12">
+                                    <div class="page-heading-container">
+                                        <h3 class="page-heading announcement-type">@ViewBag.EstateName</h3>
+                                        <h3 class="page-heading announcement-price">@ViewBag.Price AZN / @(ViewBag.DurationType == "Aylıq" ? "ay" : "gün")</h3>
+                                    </div>
+                                    <div class="announcement-location-vip-container">
+                                        <div class="announcement-location-container">
+                                            <i class="fas fa-map-marker-alt location-icon"></i>
+                                            <span class="announcement-location">@ViewBag.CityName</span>
+                                        </div>
+                                        @if (ViewBag.IsVIP == true)
+                                        {
+                                            <i class="fas fa-crown vip-crown"></i>
+                                        }
+                                    </div>
+                                    <div class="announcement-time-viewcount-container">
+                                        <div class="announcement-time-container">
+                                            <i class="far fa-calendar-check calendar-icon"></i>
+                                            <span class="announcement-time">@ViewBag.PublishDateDay @ViewBag.MonthName @ViewBag.PublishDateYear</span>
+                                        </div>
+                                        <div class="announcement-viewcount-container">
+                                            <i class="far fa-eye eye-icon"></i>
+                                            <span class="announcement-viewcount">@ViewBag.ViewCount</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 announcement-slider-container announcement-blur">
+                                <div class="announcement-slider-frame">
+                                    <!-- <div class="announcement-slider-overlay"></div> -->
+                                    <i class="fas fa-chevron-left big-left-arrow"></i>
+                                    <ul class="announcement-slider-photos">
+                                        <li class="slider-big-active">
+                                            <img src="~/MainPageFiles/images/announcements/@ViewBag.AnnouncementPhotosFirst.AnnouncementPhotoURL">
+                                        </li>
+                                        @foreach (var announcement in ViewBag.AnnouncementPhotos)
+                                        {
+                                            @if (announcement != ViewBag.AnnouncementPhotosFirst)
+                                            {
+                                                <li>
+                                                    <img src="~/MainPageFiles/images/announcements/@announcement.AnnouncementPhotoURL">
+                                                </li>
+                                            }
+                                        }
+                                    </ul>
+                                    <i class="fas fa-chevron-right big-right-arrow"></i>
+                                    <i class="fas fa-chevron-left small-left-arrow"></i>
+                                    <ul class="announcement-slider-thumbnail">
+                                        <li class="slider-active">
+                                            <img src="~/MainPageFiles/images/announcements/@ViewBag.AnnouncementPhotosFirst.AnnouncementPhotoURL">
+                                        </li>
+                                        @foreach (var announcement in ViewBag.AnnouncementPhotos)
+                                        {
+                                            @if (announcement != ViewBag.AnnouncementPhotosFirst)
+                                            {
+                                                <li>
+                                                    <img src="~/MainPageFiles/images/announcements/@announcement.AnnouncementPhotoURL">
+                                                </li>
+                                            }
+                                        }
+                                    </ul>
+                                    <i class="fas fa-chevron-right small-right-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 announcement-details announcement-blur">
+                                <div class="announcement-area-rooms-container">
+                                    @if (ViewBag.EstateName == "Torpaq")
+                                    {
+                                        <div class="announcement-area-container">
+                                            <span class="announcement-area">Sahə:</span>
+                                            <span class="announcement-area-dimension">  @(ViewBag.Area.ToString().Substring(0, ViewBag.Area.ToString().Length - 3) + " sot")</span>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="announcement-area-container">
+                                            <span class="announcement-area">Sahə:</span>
+                                            <span class="announcement-area-dimension">  @(ViewBag.Area + " m²")</span>
+                                        </div>
+                                    }
+
+                                    @if (ViewBag.EstateName == "Mənzil" || ViewBag.EstateName == "Ev/Villa")
+                                    {
+                                        <div class="announcement-rooms-container">
+                                            <span class="announcement-rooms">Otaq sayı:</span>
+                                            <span class="announcement-rooms-count"> @(ViewBag.RoomType.Length != 9 ? ViewBag.RoomType.Substring(ViewBag.RoomType.Length - 8, 1) : ViewBag.RoomType.Substring(ViewBag.RoomType.Length - 9, 2))</span>
+                                        </div>
+                                    }
+                                </div>
+                                <div class="announcement-info-container">
+                                    <p class="announcement-info">
+                                        @ViewBag.Details
+                                    </p>
+                                </div>
+                                <input class="estate-id-for-alike-announcements" type="hidden" value="@ViewBag.SelectedEstateId" />
+                            </div>
+                        }
+                    </div>
+                </div>
+                
+                <div class="col-xs-12 col-sm-6 col-lg-4 announcement-right-side announcement-blur">
+                    @if (ViewBag.AuthorUser != null)
+                    {
+                        <a asp-controller="Elanlar" asp-action="Istifadechininelanlari" asp-route-userId="@ViewBag.CustomUserId" class="text-decoration-none">
+                            <div class="announcement-seller-container">
+                                <div class="announcement-seller-photo-container">
+                                    <img src="~/MainPageFiles/images/users/@ViewBag.CustomUserProfilePictureURL">
+                                </div>
+                                <div class="announcement-seller-details-container">
+                                    <p class="announcement-seller-fullname">@ViewBag.CustomUserFirstName @ViewBag.CustomUserLastName</p>
+                                    <p class="announcement-seller-profession">əlaqədar şəxs</p>
+                                    <div class="announcement-seller-email-container">
+                                        <i class="far fa-envelope envelope-icon"></i>
+                                        <span class="announcement-seller-email">@ViewBag.CustomUserEmail</span>
+                                    </div>
+                                    <div class="announcement-seller-phone-container">
+                                        <i class="fas fa-mobile-alt phone-icon"></i>
+                                        <span class="announcement-seller-phone">@ViewBag.CustomUserPhoneNumber.Substring(0, 6) @ViewBag.CustomUserPhoneNumber.Substring(6, 7)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    }
+                </div>
+                </div>
+        </div>
+    </div>
+</section>
+<!-- ANNOUNCEMENT section end -->
+
+
+
+
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+    <!-- ---JAVASCRIPT SCROLL EFFECTS DATA-AOS--- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- +++JAVASCRIPT SCROLL EFFECTS DATA-AOS+++ -->
+}
+
+
+
+
+

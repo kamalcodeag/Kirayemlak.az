@@ -1,0 +1,273 @@
+﻿@model AnnouncementViewModel
+
+<!-- LAYER FOR HEADER section start -->
+<section id="layer-for-header">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+        </div>
+    </div>
+</section>
+<!-- LAYER FOR HEADER section end -->
+<!-- ANNOUNCEMENT section start -->
+<section id="announcement">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-lg-8 announcement-left-side">
+                    <div class="row announcement-blur">
+                        <div class="col-xs-12">
+                            @*@if (TempData["ValidationError"] != null)
+                                {
+                                    <input class="validation-error-for-update" type="hidden" value="1" />
+                                    @*<p class="notification-message-tempdata">
+                                            Error
+                                        </p>
+                                }*@
+                        </div>
+                        <div class="col-xs-12">
+                            @*@if (ViewBag.AuthorUser != null)
+                            {
+                                <a asp-controller="Hesab" asp-action="Menimhesabim"
+                                   class="announcement-details-btn-container text-decoration-none">
+                                    <i class="fas fa-long-arrow-alt-left back-icon"></i>
+                                    <input class="announcement-details-back input-login-register-pages input-btn-login-register"
+                                           type="button" value="Geri qayıt">
+                                </a>
+                            }*@
+                        </div>
+                        @*@if (ViewBag.AuthorUser != null)
+                        {
+                            <div class="col-xs-12 col-sm-6">
+                                <input class="announcement-details-edit input-login-register-pages input-btn-login-register"
+                                       type="button" value="Düzəliş et">
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <input class="announcement-details-delete input-login-register-pages input-btn-login-register"
+                                       type="button" value="Sil">
+                            </div>
+                        }*@
+                    </div>
+                    <div class="row announcement-container">
+                            <div class="announcement-heading-container announcement-blur">
+                                <div class="col-xs-12">
+                                    <div class="page-heading-container">
+                                        <h3 class="page-heading announcement-type">@Model.Announcement.Estate.EstateName</h3>
+                                        <h3 class="page-heading announcement-price">@Model.Announcement.Price AZN / @(Model.Announcement.Duration.DurationType == "Aylıq" ? "ay" : "gün")</h3>
+                                    </div>
+                                    <div class="announcement-location-vip-container">
+                                        <div class="announcement-location-container">
+                                            <i class="fas fa-map-marker-alt location-icon"></i>
+                                            <span class="announcement-location">@Model.Announcement.City.CityName</span>
+                                        </div>
+                                        @if (Model.Announcement.IsVIP == true)
+                                        {
+                                            <i class="fas fa-crown vip-crown"></i>
+                                        }
+                                    </div>
+                                    <div class="announcement-time-viewcount-container">
+                                        <div class="announcement-time-container">
+                                            <i class="far fa-calendar-check calendar-icon"></i>
+                                            <span class="announcement-time">@Model.Announcement.PublishDate.Day @Model.Announcement.Month.MonthName @Model.Announcement.PublishDate.Year</span>
+                                        </div>
+                                        <div class="announcement-viewcount-container">
+                                            <i class="far fa-eye eye-icon"></i>
+                                            <span class="announcement-viewcount">@Model.Announcement.ViewCount</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 announcement-slider-container announcement-blur">
+                                <div class="announcement-slider-frame">
+                                    <!-- <div class="announcement-slider-overlay"></div> -->
+                                    <i class="fas fa-chevron-left big-left-arrow"></i>
+                                    <ul class="announcement-slider-photos">
+                                        <li class="slider-big-active">
+                                            <img src="~/MainPageFiles/images/announcements/@Model.Announcement.AnnouncementPhotos.ElementAt(0).AnnouncementPhotoURL">
+                                        </li>
+                                        @foreach (var announcement in Model.Announcement.AnnouncementPhotos)
+                                        {
+                                            @if (announcement != Model.Announcement.AnnouncementPhotos.ElementAt(0))
+                                            {
+                                                <li>
+                                                    <img src="~/MainPageFiles/images/announcements/@announcement.AnnouncementPhotoURL">
+                                                </li>
+                                            }
+                                        }
+                                    </ul>
+                                    <i class="fas fa-chevron-right big-right-arrow"></i>
+                                    <i class="fas fa-chevron-left small-left-arrow"></i>
+                                    <ul class="announcement-slider-thumbnail">
+                                        <li class="slider-active">
+                                            <img src="~/MainPageFiles/images/announcements/@Model.Announcement.AnnouncementPhotos.ElementAt(0).AnnouncementPhotoURL">
+                                        </li>
+                                        @foreach (var announcement in Model.Announcement.AnnouncementPhotos)
+                                        {
+                                            @if (announcement != Model.Announcement.AnnouncementPhotos.ElementAt(0))
+                                            {
+                                                <li>
+                                                    <img src="~/MainPageFiles/images/announcements/@announcement.AnnouncementPhotoURL">
+                                                </li>
+                                            }
+                                        }
+                                    </ul>
+                                    <i class="fas fa-chevron-right small-right-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 announcement-details announcement-blur">
+                                <div class="announcement-area-rooms-container">
+                                    @if (Model.Announcement.Estate.EstateName == "Torpaq")
+                                    {
+                                        <div class="announcement-area-container">
+                                            <span class="announcement-area">Sahə:</span>
+                                            <span class="announcement-area-dimension">  @(Model.Announcement.Area.ToString().Substring(0, Model.Announcement.Area.ToString().Length - 3) + " sot")</span>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="announcement-area-container">
+                                            <span class="announcement-area">Sahə:</span>
+                                            <span class="announcement-area-dimension">  @(Model.Announcement.Area + " m²")</span>
+                                        </div>
+                                    }
+
+                                    @if (Model.Announcement.Estate.EstateName == "Mənzil" || Model.Announcement.Estate.EstateName == "Ev/Villa")
+                                    {
+                                        <div class="announcement-rooms-container">
+                                            <span class="announcement-rooms">Otaq sayı:</span>
+                                            <span class="announcement-rooms-count"> @(Model.Announcement.Room.RoomType.Length != 9 ? Model.Announcement.Room.RoomType.Substring(Model.Announcement.Room.RoomType.Length - 8, 1) : Model.Announcement.Room.RoomType.Substring(Model.Announcement.Room.RoomType.Length - 9, 2))</span>
+                                        </div>
+                                    }
+                                </div>
+                                <div class="announcement-info-container">
+                                    <p class="announcement-info">
+                                        @Model.Announcement.Details
+                                    </p>
+                                </div>
+                                <input class="estate-id-for-alike-announcements" type="hidden" value="@Model.Announcement.EstateId" />
+                            </div>
+                    </div>
+                </div>
+
+                    <div class="col-xs-12 col-sm-6 col-lg-4 announcement-right-side announcement-blur">
+                        <a asp-controller="Elanlar" asp-action="Istifadechininelanlari" asp-route-userId="@Model.Announcement.CustomUserId" class="text-decoration-none">
+                            <div class="announcement-seller-container">
+                                <div class="announcement-seller-photo-container">
+                                    <img src="~/MainPageFiles/images/users/@Model.Announcement.CustomUser.ProfilePictureURL">
+                                </div>
+                                <div class="announcement-seller-details-container">
+                                    <p class="announcement-seller-fullname">@Model.Announcement.CustomUser.FirstName @Model.Announcement.CustomUser.LastName</p>
+                                    <p class="announcement-seller-profession">əlaqədar şəxs</p>
+                                    <div class="announcement-seller-email-container">
+                                        <i class="far fa-envelope envelope-icon"></i>
+                                        <span class="announcement-seller-email">@Model.Announcement.CustomUser.Email</span>
+                                    </div>
+                                    <div class="announcement-seller-phone-container">
+                                        <i class="fas fa-mobile-alt phone-icon"></i>
+                                        <span class="announcement-seller-phone">@Model.Announcement.CustomUser.PhoneNumber.Substring(0, 6) @Model.Announcement.CustomUser.PhoneNumber.Substring(6, 7)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ANNOUNCEMENT section end -->
+
+@if (ViewBag.AuthorUser == null)
+{
+        <!-- ALIKE ANNOUNCEMENT section start -->
+        <section id="vip-recent-announcements">
+            <div class="container-fluid">
+                <div class="custom-container-fluid">
+                    <div class="row vip-heading-container recent-heading-container" data-aos="fade-up"
+                         data-aos-duration="3000">
+                        <div class="col-xs-12">
+                            <div class="vip-heading">
+                                <h3>
+                                    @ViewBag.Alike <span>ELANLARI</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row alike-row-for-load-more">
+                        @foreach (var alikeAnnouncement in Model.Announcements.Take(6))
+                        {
+                            <div class="vra-col col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                                <i data-info="@alikeAnnouncement.Estate.EstateName@alikeAnnouncement.Id@alikeAnnouncement.CustomUserId" class="far fa-heart favourite-heart-empty"></i>
+                                <i data-info="@alikeAnnouncement.Estate.EstateName@alikeAnnouncement.Id@alikeAnnouncement.CustomUserId" class="fas fa-heart favourite-heart-filled"></i>
+                                <a asp-controller="Elanlar" asp-action="Elan" asp-route-id="@alikeAnnouncement.Id" class="text-decoration-none">
+                                    <div class="vip-items-container">
+                                        <div class="vip-items-top">
+                                            <img src="~/MainPageFiles/images/announcements/@alikeAnnouncement.AnnouncementPhotos.FirstOrDefault().AnnouncementPhotoURL">
+                                            <div class="vip-overlay"></div>
+                                            <div class="vip-items-top-details">
+                                                <div class="photo-count-container">
+                                                    <i class="fas fa-camera camera-photo"></i>
+                                                    <span>@alikeAnnouncement.AnnouncementPhotos.Count()</span>
+                                                </div>
+                                                <p>@alikeAnnouncement.Price AZN / @(alikeAnnouncement.Duration.DurationType == "Aylıq" ? "ay" : "gün")</p>
+                                            </div>
+                                        </div>
+                                        <div class="vip-items-bottom">
+                                            <div class="vip-items-bottom-details">
+                                                <div class="vip-property-name">
+                                                    <h4>@alikeAnnouncement.Estate.EstateName - @(alikeAnnouncement.Estate.EstateName == "Mənzil" || alikeAnnouncement.Estate.EstateName == "Ev/Villa" ? alikeAnnouncement.Room.RoomType : (alikeAnnouncement.Estate.EstateName == "Torpaq" ? alikeAnnouncement.Area.ToString().Substring(0, alikeAnnouncement.Area.ToString().Length - 3) + " sot" : alikeAnnouncement.Area + " m²"))</h4>
+                                                </div>
+                                                <div class="vip-announcement-location">
+                                                    <h4>@alikeAnnouncement.City.CityName</h4>
+                                                </div>
+                                                <div class="vip-announcement-datetime">
+                                                    <span>@alikeAnnouncement.PublishDate.Day @alikeAnnouncement.Month.MonthName @alikeAnnouncement.PublishDate.Year</span>
+                                                    @if (alikeAnnouncement.IsVIP == true)
+                                                    {
+                                                        <i class="fas fa-crown vip-crown"></i>
+                                                    }
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        }
+                    </div>
+                    @if (Model.Announcements.Where(announcement => announcement.IsActive == true).Count() > 6)
+                    {
+                        <div class="row alike-announcements-for-load-more">
+                            <div class="col-sm-4"></div>
+                            <div class="col-xs-12 col-sm-4" data-aos="fade-up" data-aos-duration="3000">
+                                <div class="load-more-container">
+                                    <button class="load-more">Daha çox</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4"></div>
+                        </div>
+                    }
+                    <input class="skip-count-for-alike-announcements" type="hidden" value="6" />
+                </div>
+            </div>
+            <input class="cookie-favourites-for-user-announcements" type="hidden" value="@ViewBag.Cookie" />
+        </section>
+        <!-- ALIKE ANNOUNCEMENT section end -->
+}
+
+
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+    <!-- ---JAVASCRIPT SCROLL EFFECTS DATA-AOS--- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- +++JAVASCRIPT SCROLL EFFECTS DATA-AOS+++ -->
+}
+
+
+

@@ -1,0 +1,42 @@
+﻿@model IQueryable<Announcement>
+
+@foreach (var alikeAnnouncement in Model)
+{
+    <div class="vra-col col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="3000">
+        <i data-info="@alikeAnnouncement.Estate.EstateName@alikeAnnouncement.Id@alikeAnnouncement.CustomUserId" class="far fa-heart favourite-heart-empty"></i>
+        <i data-info="@alikeAnnouncement.Estate.EstateName@alikeAnnouncement.Id@alikeAnnouncement.CustomUserId" class="fas fa-heart favourite-heart-filled"></i>
+        <a asp-controller="Elanlar" asp-action="Elan" asp-route-id="@alikeAnnouncement.Id" class="text-decoration-none">
+            <div class="vip-items-container">
+                <div class="vip-items-top">
+                    <img src="~/MainPageFiles/images/announcements/@alikeAnnouncement.AnnouncementPhotos.FirstOrDefault().AnnouncementPhotoURL">
+                    <div class="vip-overlay"></div>
+                    <div class="vip-items-top-details">
+                        <div class="photo-count-container">
+                            <i class="fas fa-camera camera-photo"></i>
+                            <span>@alikeAnnouncement.AnnouncementPhotos.Count()</span>
+                        </div>
+                        <p>@alikeAnnouncement.Price AZN / @(alikeAnnouncement.Duration.DurationType == "Aylıq" ? "ay" : "gün")</p>
+                    </div>
+                </div>
+                <div class="vip-items-bottom">
+                    <div class="vip-items-bottom-details">
+                        <div class="vip-property-name">
+                            <h4>@alikeAnnouncement.Estate.EstateName - @(alikeAnnouncement.Estate.EstateName == "Mənzil" || alikeAnnouncement.Estate.EstateName == "Ev/Villa" ? alikeAnnouncement.Room.RoomType : (alikeAnnouncement.Estate.EstateName == "Torpaq" ? alikeAnnouncement.Area.ToString().Substring(0, alikeAnnouncement.Area.ToString().Length - 3) + " sot" : alikeAnnouncement.Area + " m²"))</h4>
+                        </div>
+                        <div class="vip-announcement-location">
+                            <h4>@alikeAnnouncement.City.CityName</h4>
+                        </div>
+                        <div class="vip-announcement-datetime">
+                            <span>@alikeAnnouncement.PublishDate.Day @alikeAnnouncement.Month.MonthName @alikeAnnouncement.PublishDate.Year</span>
+                            @if (alikeAnnouncement.IsVIP == true)
+                            {
+                                <i class="fas fa-crown vip-crown"></i>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+}
+<input class="count-for-alike-announcements" type="hidden" value="@ViewBag.Count" />

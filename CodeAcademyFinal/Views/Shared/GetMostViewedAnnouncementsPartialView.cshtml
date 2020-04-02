@@ -1,0 +1,42 @@
+﻿@model IQueryable<Announcement>
+
+@foreach (var mostViewedAnnouncement in Model)
+{
+    <div class="vra-col col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="3000">
+        <i data-info="@mostViewedAnnouncement.Estate.EstateName@mostViewedAnnouncement.Id@mostViewedAnnouncement.CustomUserId" class="far fa-heart favourite-heart-empty"></i>
+        <i data-info="@mostViewedAnnouncement.Estate.EstateName@mostViewedAnnouncement.Id@mostViewedAnnouncement.CustomUserId" class="fas fa-heart favourite-heart-filled"></i>
+        <a asp-controller="Elanlar" asp-action="Elan" asp-route-id="@mostViewedAnnouncement.Id" class="text-decoration-none">
+            <div class="vip-items-container">
+                <div class="vip-items-top">
+                    <img src="~/MainPageFiles/images/announcements/@mostViewedAnnouncement.AnnouncementPhotos.FirstOrDefault().AnnouncementPhotoURL">
+                    <div class="vip-overlay"></div>
+                    <div class="vip-items-top-details">
+                        <div class="photo-count-container">
+                            <i class="fas fa-camera camera-photo"></i>
+                            <span>@mostViewedAnnouncement.AnnouncementPhotos.Count()</span>
+                        </div>
+                        <p>@mostViewedAnnouncement.Price AZN / @(mostViewedAnnouncement.Duration.DurationType == "Aylıq" ? "ay" : "gün")</p>
+                    </div>
+                </div>
+                <div class="vip-items-bottom">
+                    <div class="vip-items-bottom-details">
+                        <div class="vip-property-name">
+                            <h4>@mostViewedAnnouncement.Estate.EstateName - @(mostViewedAnnouncement.Estate.EstateName == "Mənzil" || mostViewedAnnouncement.Estate.EstateName == "Ev/Villa" ? mostViewedAnnouncement.Room.RoomType : (mostViewedAnnouncement.Estate.EstateName == "Torpaq" ? mostViewedAnnouncement.Area.ToString().Substring(0, mostViewedAnnouncement.Area.ToString().Length - 3) + " sot" : mostViewedAnnouncement.Area + " m²"))</h4>
+                        </div>
+                        <div class="vip-announcement-location">
+                            <h4>@mostViewedAnnouncement.City.CityName</h4>
+                        </div>
+                        <div class="vip-announcement-datetime">
+                            <span>@mostViewedAnnouncement.PublishDate.Day @mostViewedAnnouncement.Month.MonthName @mostViewedAnnouncement.PublishDate.Year</span>
+                            @if (mostViewedAnnouncement.IsVIP == true)
+                            {
+                                <i class="fas fa-crown vip-crown"></i>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+}
+<input class="count-for-most-announcements" type="hidden" value="@ViewBag.Count" />

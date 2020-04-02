@@ -1,0 +1,64 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157528055-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157528055-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Daşınmaz əmlakın kirayəsi">
+    <meta name="keywords"
+          content="kiraye,icare,satish,dashinmaz,emlak,mulk,menzil,ev,villa,bag,torpaq,qaraj,ofis,obyekt,ayliq,gunluk,reklam,rent,house,home,estate,garden,property,sale">
+    <meta name="author" content="Kamal Quliyev">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xəta baş verdi - Kirayeemlak.az</title>
+    <link rel="icon" href="~/MainPageFiles/images/house-logo-bg2.jpg">
+    <link rel="stylesheet" href="~/MainPageFiles/css/reset.css">
+    <link rel="stylesheet" href="~/MainPageFiles/fonts/maven-pro-light.css">
+    <link rel="stylesheet" href="~/MainPageFiles/css/flexboxgrid.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="~/MainPageFiles/css/style.css">
+</head>
+
+<body>
+
+    <!-- LOADER section start -->
+    <div class="loader-container">
+        <img src="~/MainPageFiles/images/house-loader.gif">
+    </div>
+    <!-- LOADER section end -->
+    <!-- ERROR section start -->
+    <div class="error-container" style="background-image: url('@Url.Content("~/MainPageFiles/images/house-error2.gif")')">
+        <div class="error-overlay"></div>
+        <h1>Xəta baş verdi</h1>
+        <a asp-controller="Anasehife" asp-action="Index" class="announcement-details-btn-container text-decoration-none">
+            <input class="announcement-details-back input-login-register-pages input-btn-login-register" type="button"
+                   value="Ana səhifəyə keçid">
+        </a>
+    </div>
+    <!-- ERROR section end -->
+
+
+    <!-- ---jQuery CONNECTION--- -->
+    <script src="~/MainPageFiles/js/jQueryConnection.js"></script>
+    <!-- +++jQuery CONNECTION+++ -->
+
+    <!-- ---CUSTOM JAVASCRIPT--- -->
+    <script src="~/MainPageFiles/js/main.js"></script>
+    <!-- +++CUSTOM JAVASCRIPT+++ -->
+
+</body>
+
+</html>

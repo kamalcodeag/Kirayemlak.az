@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAALHIcLdkE0kSkyQ3TSCeTXwAAAAACAAAAAAAQZgAAAAEAACAAAADRFUeYRFvJN8X7Ebyy4oqzYQJca79xSFN0Xe/Ed2mjcgAAAAAOgAAAAAIAACAAAAAqGE5fkowLrPTCo1OjF1TBD/naiVf8Vno6t0k8Xqfw3SAAAAAs/hBvOppOiwfnAlPajmYlTXdNC1ebLaWWw6y6KgFmAUAAAAC/Mw2KMWbn8GkqNwl8Ndrzbpo0zLIZ4SIDO3zjBTqf0G9Rk6NbZvtb2dSqr6IDwS0R76vbFlSVxSuNvAxV4loG</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp-eu.site4now.net/site</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>10/08/2019 00:30:11</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>10/08/2019 00:36:45</publishTime>
+    </File>
+    <File Include="appsettings.production.json">
+      <publishTime>10/18/2019 23:38:15</publishTime>
+    </File>
+    <File Include="Castle.Core.dll">
+      <publishTime>10/10/2017 08:13:52</publishTime>
+    </File>
+    <File Include="CodeAcademyFinal.deps.json">
+      <publishTime>10/18/2019 23:38:14</publishTime>
+    </File>
+    <File Include="CodeAcademyFinal.dll">
+      <publishTime>10/18/2019 23:38:07</publishTime>
+    </File>
+    <File Include="CodeAcademyFinal.pdb">
+      <publishTime>10/18/2019 23:38:07</publishTime>
+    </File>
+    <File Include="CodeAcademyFinal.runtimeconfig.json">
+      <publishTime>10/18/2019 23:38:14</publishTime>
+    </File>
+    <File Include="CodeAcademyFinal.Views.dll">
+      <publishTime>10/18/2019 23:38:08</publishTime>
+    </File>
+    <File Include="CodeAcademyFinal.Views.pdb">
+      <publishTime>10/18/2019 23:38:08</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>10/08/2019 00:39:13</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Abstractions.dll">
+      <publishTime>09/20/2018 15:08:26</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.dll">
+      <publishTime>09/20/2018 15:08:30</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Proxies.dll">
+      <publishTime>09/20/2018 15:08:24</publishTime>
+    </File>
+    <File Include="Remotion.Linq.dll">
+      <publishTime>06/06/2019 21:10:35</publishTime>
+    </File>
+    <File Include="System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>09/18/2018 19:38:16</publishTime>
+    </File>
+    <File Include="System.Interactive.Async.dll">
+      <publishTime>06/06/2019 21:09:30</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>10/18/2019 23:38:15</publishTime>
+    </File>
+    <File Include="wwwroot/AdminPanelFiles/assets/css/style.css">
+      <publishTime>10/14/2019 12:50:27</publishTime>
+    </File>
+    <File Include="wwwroot/AdminPanelFiles/assets/js/main.js">
+      <publishTime>10/07/2019 14:38:32</publishTime>
+    </File>
+    <File Include="wwwroot/AdminPanelFiles/fonts/maven-pro-light.css">
+      <publishTime>08/20/2019 17:40:30</publishTime>
+    </File>
+    <File Include="wwwroot/AdminPanelFiles/fonts/MavenProLight100-UltraLight.ttf">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/AdminPanelFiles/fonts/MavenProLight100-UltraLight.woff">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/AdminPanelFiles/fonts/MavenProLight100-UltraLight.woff2">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/AdminPanelFiles/fonts/MavenProLight200-Thin.ttf">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/AdminPanelFiles/fonts/MavenProLight200-Thin.woff">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/AdminPanelFiles/fonts/MavenProLight200-Thin.woff2">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/AdminPanelFiles/fonts/MavenProLight300-Light.ttf">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/AdminPanelFiles/fonts/MavenProLight300-Light.woff">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/AdminPanelFiles/fonts/MavenProLight300-Light.woff2">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>09/11/2019 20:45:05</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/additional-methods.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/additional-methods.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/jquery.validate.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/jquery.validate.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ar.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ar.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_az.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_az.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_bg.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_bg.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_bn_BD.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_bn_BD.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ca.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ca.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_cs.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_cs.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_da.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_da.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_de.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_de.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_el.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_el.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_es.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_es.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_es_AR.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_es_AR.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_es_PE.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_es_PE.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_et.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_et.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_eu.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_eu.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_fa.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_fa.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_fi.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_fi.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_fr.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_fr.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ge.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ge.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_gl.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_gl.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_he.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_he.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_hr.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_hr.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_hu.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_hu.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_hy_AM.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_hy_AM.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_id.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_id.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_is.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_is.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_it.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_it.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ja.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ja.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ka.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ka.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_kk.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_kk.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ko.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ko.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_lt.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_lt.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_lv.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_lv.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_mk.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_mk.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_my.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_my.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_nl.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_nl.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_no.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_no.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_pl.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_pl.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_pt_BR.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_pt_BR.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_pt_PT.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_pt_PT.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ro.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ro.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ru.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ru.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_sd.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_sd.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_si.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_si.min.js">
+      <publishTime>09/11/2019 21:33:48</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_sk.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_sk.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_sl.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_sl.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_sr.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_sr.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_sr_lat.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_sr_lat.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_sv.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_sv.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_th.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_th.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_tj.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_tj.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_tr.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_tr.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_uk.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_uk.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ur.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_ur.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_vi.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_vi.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_zh.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_zh.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_zh_TW.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/messages_zh_TW.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/methods_de.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/methods_de.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/methods_es_CL.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/methods_es_CL.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/methods_fi.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/methods_fi.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/methods_it.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/methods_it.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/methods_nl.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/methods_nl.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/methods_pt.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validate/localization/methods_pt.min.js">
+      <publishTime>09/11/2019 21:33:49</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>09/11/2019 21:34:07</publishTime>
+    </File>
+    <File Include="wwwroot/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>09/11/2019 21:34:07</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/css/combine.css">
+      <publishTime>10/13/2019 02:08:31</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/css/common.css">
+      <publishTime>09/02/2019 10:22:40</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/css/flexboxgrid.css">
+      <publishTime>08/27/2019 00:32:59</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/css/flexboxgrid.min.css">
+      <publishTime>08/12/2016 21:08:06</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/css/reset.css">
+      <publishTime>08/20/2019 13:59:42</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/css/style.css">
+      <publishTime>10/07/2019 14:37:35</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/css/style.css.map">
+      <publishTime>08/20/2019 17:56:00</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/css/table.css">
+      <publishTime>09/01/2019 16:49:44</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/fonts/maven-pro-light.css">
+      <publishTime>08/20/2019 17:40:30</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/fonts/MavenProLight100-UltraLight.ttf">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/fonts/MavenProLight100-UltraLight.woff">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/fonts/MavenProLight100-UltraLight.woff2">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/fonts/MavenProLight200-Thin.ttf">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/fonts/MavenProLight200-Thin.woff">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/fonts/MavenProLight200-Thin.woff2">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/fonts/MavenProLight300-Light.ttf">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/fonts/MavenProLight300-Light.woff">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/fonts/MavenProLight300-Light.woff2">
+      <publishTime>08/20/2019 13:53:36</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/advertisements/adv.jpg">
+      <publishTime>08/27/2019 00:47:04</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate1.jpg">
+      <publishTime>10/07/2019 10:36:05</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate10.jpg">
+      <publishTime>10/07/2019 10:39:42</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate100.jpg">
+      <publishTime>10/07/2019 11:37:38</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate101.jpg">
+      <publishTime>10/07/2019 11:38:52</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate102.jpg">
+      <publishTime>10/07/2019 11:39:23</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate103.jpg">
+      <publishTime>10/07/2019 11:39:35</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate104.jpg">
+      <publishTime>10/07/2019 11:39:45</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate105.jpg">
+      <publishTime>10/07/2019 11:42:41</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate106.jpg">
+      <publishTime>10/07/2019 11:42:51</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate107.jpg">
+      <publishTime>10/07/2019 11:43:05</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate108.jpg">
+      <publishTime>10/07/2019 11:43:13</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate109.jpg">
+      <publishTime>10/13/2019 01:32:24</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate11.jpg">
+      <publishTime>10/07/2019 10:39:50</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate110.jpg">
+      <publishTime>10/07/2019 11:43:51</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate111.jpg">
+      <publishTime>10/07/2019 11:44:02</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate112.jpg">
+      <publishTime>10/07/2019 11:44:17</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate113.jpg">
+      <publishTime>10/07/2019 11:45:26</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate114.jpg">
+      <publishTime>10/07/2019 11:45:35</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate115.jpg">
+      <publishTime>10/07/2019 11:45:42</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate116.jpg">
+      <publishTime>10/07/2019 11:47:57</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate117.jpg">
+      <publishTime>10/07/2019 11:48:09</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate118.jpg">
+      <publishTime>10/07/2019 11:48:30</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate119.jpg">
+      <publishTime>10/07/2019 11:48:45</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate12.jpg">
+      <publishTime>10/07/2019 10:39:56</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate120.jpg">
+      <publishTime>10/07/2019 11:49:36</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate121.jpg">
+      <publishTime>10/07/2019 11:49:53</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate122.jpg">
+      <publishTime>10/07/2019 11:50:22</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate123.jpg">
+      <publishTime>10/07/2019 11:51:15</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate13.jpg">
+      <publishTime>10/07/2019 10:40:03</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate14.jpg">
+      <publishTime>10/07/2019 10:40:17</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate15.jpg">
+      <publishTime>10/07/2019 10:40:22</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate16.jpg">
+      <publishTime>10/07/2019 10:42:00</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate17.jpg">
+      <publishTime>10/07/2019 10:42:05</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate18.jpg">
+      <publishTime>10/07/2019 10:42:11</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate19.jpg">
+      <publishTime>10/07/2019 10:42:17</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate2.jpg">
+      <publishTime>10/07/2019 10:36:12</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate20.jpg">
+      <publishTime>10/07/2019 10:42:24</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate21.jpg">
+      <publishTime>10/07/2019 10:42:30</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate22.jpg">
+      <publishTime>10/07/2019 10:42:38</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate23.jpg">
+      <publishTime>10/07/2019 10:44:23</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate24.jpg">
+      <publishTime>10/07/2019 10:44:29</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate25.jpg">
+      <publishTime>10/07/2019 10:44:35</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate26.jpg">
+      <publishTime>10/07/2019 10:44:44</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate27.jpg">
+      <publishTime>10/07/2019 10:44:49</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate28.jpg">
+      <publishTime>10/07/2019 10:44:56</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate29.jpg">
+      <publishTime>10/07/2019 10:45:01</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate3.jpg">
+      <publishTime>10/07/2019 10:36:27</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate30.jpg">
+      <publishTime>10/07/2019 10:45:08</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate31.jpg">
+      <publishTime>10/07/2019 10:45:15</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate32.jpg">
+      <publishTime>10/07/2019 10:45:26</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate33.jpg">
+      <publishTime>10/07/2019 10:54:25</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate34.jpg">
+      <publishTime>10/07/2019 10:54:43</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate35.jpg">
+      <publishTime>10/07/2019 10:54:52</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate36.jpg">
+      <publishTime>10/07/2019 10:55:01</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate37.jpg">
+      <publishTime>10/07/2019 10:55:08</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate38.jpg">
+      <publishTime>10/07/2019 10:55:16</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate39.jpg">
+      <publishTime>10/07/2019 10:55:27</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate4.jpg">
+      <publishTime>10/07/2019 10:36:33</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate40.jpg">
+      <publishTime>10/07/2019 10:56:53</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate41.jpg">
+      <publishTime>10/07/2019 10:58:48</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate42.jpg">
+      <publishTime>10/07/2019 10:58:56</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate43.jpg">
+      <publishTime>10/07/2019 10:59:04</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate44.jpg">
+      <publishTime>10/07/2019 10:59:12</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate45.jpg">
+      <publishTime>10/07/2019 10:59:52</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate46.jpg">
+      <publishTime>10/07/2019 11:00:11</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate47.jpg">
+      <publishTime>10/07/2019 11:01:26</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate48.jpg">
+      <publishTime>10/07/2019 11:02:56</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate49.jpg">
+      <publishTime>10/07/2019 11:03:04</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate5.jpg">
+      <publishTime>10/07/2019 10:36:39</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate50.jpg">
+      <publishTime>10/07/2019 11:03:12</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate51.jpg">
+      <publishTime>10/07/2019 11:03:44</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate52.jpg">
+      <publishTime>10/07/2019 11:03:51</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate53.jpg">
+      <publishTime>10/07/2019 11:04:00</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate54.jpg">
+      <publishTime>10/07/2019 11:04:09</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate55.jpg">
+      <publishTime>10/07/2019 11:04:20</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate56.jpg">
+      <publishTime>10/07/2019 11:04:28</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate57.jpg">
+      <publishTime>10/07/2019 11:04:39</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate58.jpg">
+      <publishTime>10/07/2019 11:04:45</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate59.jpg">
+      <publishTime>10/07/2019 11:10:36</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate6.jpg">
+      <publishTime>10/07/2019 10:36:45</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate60.jpg">
+      <publishTime>10/07/2019 11:10:45</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate61.jpg">
+      <publishTime>10/07/2019 11:10:52</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate62.jpg">
+      <publishTime>10/07/2019 11:10:59</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate63.jpg">
+      <publishTime>10/07/2019 11:11:07</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate64.jpg">
+      <publishTime>10/07/2019 11:11:14</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate65.jpg">
+      <publishTime>10/07/2019 11:14:51</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate66.jpg">
+      <publishTime>10/07/2019 11:15:19</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate67.jpg">
+      <publishTime>10/07/2019 11:15:26</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate68.jpg">
+      <publishTime>10/07/2019 11:15:33</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate69.jpg">
+      <publishTime>10/07/2019 11:15:40</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate7.jpg">
+      <publishTime>10/07/2019 10:36:51</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate70.jpg">
+      <publishTime>10/07/2019 11:15:50</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate71.jpg">
+      <publishTime>10/07/2019 11:16:03</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate72.jpg">
+      <publishTime>10/07/2019 11:16:10</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate73.jpg">
+      <publishTime>10/07/2019 11:16:20</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate74.jpg">
+      <publishTime>10/07/2019 11:16:27</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate75.jpg">
+      <publishTime>10/07/2019 11:16:34</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate76.jpg">
+      <publishTime>10/07/2019 11:16:42</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate77.jpg">
+      <publishTime>10/07/2019 11:22:24</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate78.jpg">
+      <publishTime>10/07/2019 11:22:44</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate79.jpg">
+      <publishTime>10/07/2019 11:22:49</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate8.jpg">
+      <publishTime>10/07/2019 10:36:56</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate80.jpg">
+      <publishTime>10/07/2019 11:23:04</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate81.jpg">
+      <publishTime>10/07/2019 11:23:46</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate82.jpg">
+      <publishTime>10/07/2019 11:23:52</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate83.jpg">
+      <publishTime>10/07/2019 11:24:18</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate84.jpg">
+      <publishTime>10/07/2019 11:24:28</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate85.jpg">
+      <publishTime>10/07/2019 11:24:48</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate86.jpg">
+      <publishTime>10/07/2019 11:24:56</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate87.jpg">
+      <publishTime>10/07/2019 11:25:03</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate88.jpg">
+      <publishTime>10/07/2019 11:25:09</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate89.jpg">
+      <publishTime>10/07/2019 11:25:14</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate9.jpg">
+      <publishTime>10/07/2019 10:39:37</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate90.jpg">
+      <publishTime>10/07/2019 11:27:57</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate91.jpg">
+      <publishTime>10/07/2019 11:28:08</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate92.jpg">
+      <publishTime>10/07/2019 11:28:13</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate93.jpg">
+      <publishTime>10/07/2019 11:28:22</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate94.jpg">
+      <publishTime>10/07/2019 11:28:28</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate95.jpg">
+      <publishTime>10/07/2019 11:28:35</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate96.jpg">
+      <publishTime>10/07/2019 11:28:44</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate97.jpg">
+      <publishTime>10/07/2019 11:35:09</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate98.jpg">
+      <publishTime>10/07/2019 11:35:39</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/announcements/estate99.jpg">
+      <publishTime>10/07/2019 11:36:14</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/baku-flame-towers.jpg">
+      <publishTime>10/08/2019 11:00:19</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/change-password.png">
+      <publishTime>09/04/2019 09:20:22</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/cloud1.png">
+      <publishTime>08/20/2019 15:39:57</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/cloud2.png">
+      <publishTime>08/20/2019 15:41:15</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/cloud3.png">
+      <publishTime>08/20/2019 15:40:12</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/forgot-password.jpg">
+      <publishTime>08/26/2019 21:28:22</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/house-about.jpg">
+      <publishTime>10/08/2019 11:08:31</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/house-error2.gif">
+      <publishTime>09/02/2019 16:00:40</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/house-loader.gif">
+      <publishTime>08/24/2019 20:33:31</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/house-mail.jpg">
+      <publishTime>08/25/2019 01:31:54</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/house-rules.jpg">
+      <publishTime>08/25/2019 00:04:09</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/IconEstate.png">
+      <publishTime>10/08/2019 17:25:29</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/LogoKirayemlak.jpg">
+      <publishTime>10/08/2019 17:33:14</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/userannouncement.jpg">
+      <publishTime>08/30/2019 17:35:21</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/userannouncement2.jpg">
+      <publishTime>08/30/2019 17:47:03</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/users/84e358b0-c5ef-4aed-9685-8b3eb6bd38af_istifadechi_person-male-default.jpg">
+      <publishTime>10/14/2019 01:12:40</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/users/b18e6438-4bc0-414f-8842-9bdc4475eb4d_istifadechi_features1.jpg">
+      <publishTime>10/14/2019 01:12:41</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/users/f5e244ea-8875-4954-b2b8-8f48ba98a52e_istifadechi_person-male-default.jpg">
+      <publishTime>10/14/2019 01:12:10</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/users/f88dd5c0-eb1f-436a-9a69-3c7dada20330_istifadechi_rocky922.jpg">
+      <publishTime>10/14/2019 01:12:10</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/images/users/person-male-default.jpg">
+      <publishTime>08/29/2019 11:01:12</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/js/jQueryConnection.js">
+      <publishTime>08/21/2019 09:56:00</publishTime>
+    </File>
+    <File Include="wwwroot/MainPageFiles/js/main.js">
+      <publishTime>10/07/2019 14:37:59</publishTime>
+    </File>
+  </ItemGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=SQL6007.site4now.net%3bInitial Catalog=DB_A4E965_DbRentEstate%3bUser Id=DB_A4E965_DbRentEstate_admin%3bPassword=0309camelsa1994%3b</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="SmtpClientCredentialEmail">
+      <Value>kirayeemlak%40gmail.com</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="SmtpClientCredentialPassword">
+      <Value>0309camelgmail1994</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

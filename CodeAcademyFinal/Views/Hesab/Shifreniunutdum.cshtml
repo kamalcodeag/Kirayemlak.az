@@ -1,0 +1,69 @@
+﻿@model  ForgotPasswordViewModel
+
+<!-- LAYER FOR HEADER section start -->
+<section id="layer-for-header">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+        </div>
+    </div>
+</section>
+<!-- LAYER FOR HEADER section end -->
+<!-- FORGOT PASSWORD section start -->
+<section id="forgot-password">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+            <!-- ---TEMPDATA MESSAGE SENT FOR CHANGING PASSWORD--- -->
+            @if (TempData["ForgotPassword"] != null)
+            {
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="notification-message-tempdata">
+                            Hesabınızın bərpası üçün, zəhmət olmasa, email
+                            ünvanınıza gələn məktubda göstərilən keçidə(link) daxil olun.
+                        </p>
+                    </div>
+                </div>
+            }
+            <!-- +++TEMPDATA MESSAGE SENT FOR CHANGING PASSWORD+++ -->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="page-heading">Şifrəni unutmusunuz ?</h3>
+                    <form asp-controller="Hesab" asp-action="Shifreniunutdum" method="post" class="row forgot-password-container">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <div asp-validation-summary="ModelOnly" class="input-error-message-summary"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <input asp-for="Email" class="forgot-password-email input-login-register-pages" type="email"
+                                       placeholder="Email">
+                                <span asp-validation-for="Email" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <input class="forgot-password-submit input-login-register-pages input-btn-login-register"
+                                   type="submit" value="Göndər">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12">
+                    <div class="forgot-password-image-container">
+                        <img src="~/MainPageFiles/images/forgot-password.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FORGOT PASSWORD section end -->
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+}
+

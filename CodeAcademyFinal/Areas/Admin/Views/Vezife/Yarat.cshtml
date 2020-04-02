@@ -1,0 +1,23 @@
+﻿@model IdentityRole
+
+<h3 class="mb-5">Yeni vəzifə yarat</h3>
+
+<form asp-area="Admin" asp-controller="Vezife" asp-action="Yarat" method="post" class="row">
+    <div class="col-12">
+        <input asp-for="Name" class="form-group" placeholder="Vəzifənin adı">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <input type="submit" class="form-group btn btn-primary" value="Təsdiqlə">
+    </div>
+</form>
+
+
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+}

@@ -1,0 +1,33 @@
+﻿@model IQueryable<CustomUser>
+@inject UserManager<CustomUser> _userManager
+
+@{ 
+    int number = ViewBag.Number;
+}
+
+<table data-id="@ViewBag.DataId" class="table table-hover table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>№</th>
+            <th>İstifadəçi adı</th>
+            <th>Vəzifə</th>
+            <th>Əməliyyatlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customUser in Model)
+        {
+            if (!await _userManager.IsInRoleAsync(customUser, "İstifadəçi"))
+            {
+                <tr>
+                    <td>@(number++)</td>
+                    <td>@customUser.UserName</td>
+                    <td>@((await _userManager.GetRolesAsync(customUser)).FirstOrDefault())</td>
+                    <td>
+                        <i data-id="@customUser.Id" class="fas fa-trash"></i>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

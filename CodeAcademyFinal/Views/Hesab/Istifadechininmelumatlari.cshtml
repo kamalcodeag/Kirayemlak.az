@@ -1,0 +1,118 @@
+﻿@model  AccountDetailsViewModel
+
+<!-- LAYER FOR HEADER section start -->
+<section id="layer-for-header">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+        </div>
+    </div>
+</section>
+<!-- LAYER FOR HEADER section end -->
+<!-- REGISTER section start -->
+<section id="user-details">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+            <!-- ---TEMPDATA DETAILS UPDATED--- -->
+            @if (TempData["AccountDetailsUpdated"] != null)
+            {
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="notification-message-tempdata">
+                            Şəxsi məlumatlarınız yeniləndi. Əgər email ünvanınızı
+                            dəyişdinizsə, yenidən təsdiqləməniz vacibdir.
+                        </p>
+                    </div>
+                </div>
+            }
+            <!-- +++TEMPDATA DETAILS UPDATED+++ -->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="page-heading">Şəxsi məlumatları yenilə</h3>
+                    <form asp-controller="Hesab" asp-action="Istifadechininmelumatlari" method="post" enctype="multipart/form-data" class="row register-container">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <div asp-validation-summary="ModelOnly" class="input-error-message-summary">@*Bu adda istifadəçi mövcuddur.*@</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="FirstName" class="register-firstname input-login-register-pages" type="text"
+                                       placeholder="Ad" value="@ViewBag.FirstName">
+                                <span asp-validation-for="FirstName" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="LastName" class="register-lastname input-login-register-pages" type="text"
+                                       placeholder="Soyad" value="@ViewBag.LastName">
+                                <span asp-validation-for="LastName" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="Email" class="register-email input-login-register-pages" type="email"
+                                       placeholder="Email" value="@ViewBag.Email">
+                                <span asp-validation-for="Email" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <div class="user-details-phone-container">
+                                    <select asp-for="MobileOperatorId" asp-items="@(new SelectList(ViewBag.MobileOperators, "Id", "MobileOperatorCode", ViewBag.SelectedMobileOperatorId))" class="select-operator input-login-register-pages">
+                                    </select>
+                                    <input asp-for="PhoneNumber" class="user-details-phone input-login-register-pages"
+                                           placeholder="Əlaqə nömrəsi" value="@ViewBag.PhoneNumber">
+                                </div>
+                                <span asp-validation-for="PhoneNumber" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="CurrentPassword" class="register-password input-login-register-pages" type="password"
+                                       placeholder="Hazırki şifrə">
+                                <span asp-validation-for="CurrentPassword" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="NewPassword" class="register-confirm-password input-login-register-pages" type="password"
+                                       placeholder="Yeni şifrə">
+                                <span asp-validation-for="NewPassword" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="UploadFile" class="input-upload input-login-register-pages" type="file">
+                                <i class="fas fa-upload"></i>
+                                <input class="input-upload-mask input-login-register-pages" type="button"
+                                       value="Şəkil yüklə(.jpg, .jpeg)">
+                                <span class="register-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <input class="user-details-submit input-login-register-pages input-btn-login-register"
+                                   type="submit" value="Məlumatları yadda saxla">
+                        </div>
+                        <div class="col-xs-12">
+                            <a asp-controller="Hesab" asp-action="Menimhesabim" class="user-details-btn-container text-decoration-none">
+                                <i class="fas fa-long-arrow-alt-left back-icon"></i>
+                                <input class="user-details-back input-login-register-pages input-btn-login-register"
+                                       type="button" value="Geri qayıt">
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- REGISTER section end -->
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+}

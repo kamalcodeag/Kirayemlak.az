@@ -1,0 +1,116 @@
+﻿@model IEnumerable<IdentityRole>     
+
+@{ 
+    int number = 1;
+}          
+
+<!-- ---TEMPDATA ROLE CREATED DELETED--- -->
+                <div class="row mb-5">
+                    <div class="col-xs-12">
+                        @if (TempData["PositionCreated"] != null)
+                        {
+                            <p class="text-success">Yeni vəzifə yarandı.</p>
+                        }
+                        @if (TempData["PositionDeleted"] != null)
+                        {
+                            <p class="text-success">Vəzifə silindi.</p>
+                        }
+                    </div>
+                </div>
+                <!-- +++TEMPDATA ROLE CREATED DELETED+++ -->
+
+                <div class="row">
+                    <div class="col-12 table-container-for-positions">
+                        <h3 class="mb-3">Vəzifələrin siyahısı</h3>
+                        @if ((ViewBag.AllPositions / 10) > 0)
+                        {
+                            <table data-id="1" class="table table-hover table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>№</th>
+                                        <th>Ad</th>
+                                        <th>Əməliyyatlar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var position in Model)
+                                    {
+                                        <tr>
+                                            <td>@(number++)</td>
+                                            <td>@position.Name</td>
+                                            <td>
+                                                <i data-id="@position.Id" class="fas fa-trash"></i>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        }
+                        else
+                        {
+                            <table data-id="1" class="table table-hover table-bordered active">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>№</th>
+                                        <th>Ad</th>
+                                        <th>Əməliyyatlar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" style="text-align:center;font-size:30px;">Siyahı boşdur</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <input type="hidden" class="page-count" value="1" />
+                        }
+
+                        @if ((ViewBag.AllPositions / 10).ToString().Contains("."))
+                        {
+                            @if ((((((ViewBag.AllPositions / 10) - (Math.Round(ViewBag.AllPositions / 10))) * 10) <= 5) && ((((ViewBag.AllPositions / 10) - (Math.Round(ViewBag.AllPositions / 10))) * 10) > 0)))
+                            {
+                                <input type="hidden" class="page-count" value="@(Math.Round(ViewBag.AllPositions / 10) + 1)" />
+                            }
+                            else
+                            {
+                                <input type="hidden" class="page-count" value="@(Math.Round(ViewBag.AllPositions / 10))" />
+                            }
+                        }
+                        else
+                        {
+                            <input type="hidden" class="page-count" value="@(ViewBag.AllPositions / 10)" />
+                        }
+
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-12 pagination-container-for-positions d-flex justify-content-center">
+                        <div class="pagination-container d-flex">
+                            <div class="prev-page d-flex justify-content-center align-items-center">Əvvəlki</div>
+                            <div class="pagination-window">
+                                <ul class="pagination-lent m-0 p-0 d-flex">
+                                </ul>
+                            </div>
+                            <div class="next-page d-flex justify-content-center align-items-center">Növbəti</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 announcement-delete-container-col d-none">
+                        <form asp-area="Admin" asp-controller="Vezife" asp-action="Sil" method="post" class="row announcement-delete-container">
+                            <div class="col-12">
+                                <p>Silməyə əminsiniz ?</p>
+                            </div>
+                            <div class="col-6">
+                                <!-- Attribute 'Name' helps us to send value as a parameter -->
+                                <input type="hidden" value="" name="roleId" class="delete-position"/>
+                                <input class="announcement-delete-yes input-login-register-pages input-btn-login-register"
+                                       type="submit" value="Bəli">
+                            </div>
+                            <div class="col-6">
+                                <input class="announcement-delete-no input-login-register-pages input-btn-login-register"
+                                       type="button" value="Xeyr">
+                            </div>
+                        </form>
+                    </div>
+                </div>

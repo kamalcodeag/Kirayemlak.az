@@ -1,0 +1,25 @@
+﻿@model Advertisement
+
+@{
+    ViewData["Title"] = "Default";
+}
+
+<!-- ADVERTISEMENT section start -->
+@*<aside id="left-advertisement" style="background-image: url('@Url.Content("~/MainPageFiles/images/advertisements/adv.jpg")');">
+        <div class="advertisement-container">
+        </div>
+    </aside>
+    <aside id="right-advertisement" style="background-image: url('@Url.Content("~/MainPageFiles/images/advertisements/adv.jpg")');">
+        <div class="advertisement-container">
+        </div>
+    </aside>*@
+
+<aside id="left-advertisement" style="background-image: url('/MainPageFiles/images/advertisements/@Model.AdvertisementURL');">
+    <div class="advertisement-container">
+    </div>
+</aside>
+<aside id="right-advertisement" style="background-image: url('/MainPageFiles/images/advertisements/@Model.AdvertisementURL');">
+    <div class="advertisement-container">
+    </div>
+</aside>
+<!-- ADVERTISEMENT section end -->

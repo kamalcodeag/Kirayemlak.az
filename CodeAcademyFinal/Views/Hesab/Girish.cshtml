@@ -1,0 +1,106 @@
+﻿@model  SignInViewModel
+
+<!-- LAYER FOR HEADER section start -->
+<section id="layer-for-header">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+        </div>
+    </div>
+</section>
+<!-- LAYER FOR HEADER section end -->
+<!-- LOGIN section start -->
+<section id="login">
+    <div class="container-fluid" style="padding-bottom:160px;">
+        <div class="custom-container-fluid">
+            <!-- ---TEMPDATA MUST BE SIGNED IN--- -->
+            @if (TempData["MustBeSignedIn"] != null)
+            {
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="notification-message-tempdata">
+                            Elan yerləşdirmək üçün hesabınıza daxil olmalısınız.
+                        </p>
+                    </div>
+                </div>
+            }
+            <!-- +++TEMPDATA MUST BE SIGNED IN+++ -->
+
+            <!-- ---TEMPDATA ACCOUNT RESTORED--- -->
+            @if (TempData["AccountRestored"] != null)
+            {
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="notification-message-tempdata">
+                            Təbrik edirik ! Şəxsi hesabınız bərpa olundu. Email və
+                            şifrəni daxil etməklə hesabınıza daxil ola bilərsiniz.
+                        </p>
+                    </div>
+                </div>
+            }
+            <!-- +++TEMPDATA ACCOUNT RESTORED+++ -->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="page-heading">Şəxsi hesaba giriş</h3>
+                    <form asp-controller="Hesab" asp-action="Girish" method="post" class="row login-container">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <div asp-validation-summary="ModelOnly" class="input-error-message-summary"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="Email" class="login-username input-login-register-pages" type="text"
+                                       placeholder="Email">
+                                <span asp-validation-for="Email" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="Password" class="login-password input-login-register-pages" type="password"
+                                       placeholder="Şifrə">
+                                <span asp-validation-for="Password" class="input-error-message input-error-message-password"></span>
+                                <div class="login-remember-me-container">
+                                    <input asp-for="RememberMe" type="checkbox">
+                                    <label>
+                                        Yadda saxla
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <a asp-controller="Hesab" asp-action="Qeydiyyat" class="text-decoration-none">
+                                <input type="button"
+                                       class="login-register input-login-register-pages input-btn-login-register"
+                                       value="Qeydiyyat">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <input class="login-submit input-login-register-pages input-btn-login-register"
+                                   type="submit" value="Daxil ol">
+                        </div>
+                        <div class="col-xs-6"></div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="login-forgot-container">
+                                <a asp-controller="Hesab" asp-action="Shifreniunutdum" class="login-forgot text-decoration-none">
+                                    Şifrəni
+                                    unutdum
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- LOGIN section end -->
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+}
+

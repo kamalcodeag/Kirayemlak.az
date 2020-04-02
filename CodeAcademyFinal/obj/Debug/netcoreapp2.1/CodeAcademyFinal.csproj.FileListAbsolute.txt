@@ -1,0 +1,316 @@
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.csprojAssemblyReference.cache
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.csproj.CoreCompileInputs.cache
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorAssemblyInfo.cache
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorAssemblyInfo.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.AssemblyInfoInputs.cache
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.AssemblyInfo.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.deps.json
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.runtimeconfig.json
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.runtimeconfig.dev.json
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.dll
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.TagHelpers.input.cache
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.TagHelpers.output.cache
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorCoreGenerate.cache
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Anasehife\Index.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Aktiv.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Elan.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Gozleyen.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Tesdiqedilmemish.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Gelenmektublar\Mektub.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Gelenmektublar\Siyahi.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Hesab\Girish.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Hesab\Shifrenideyish.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Ishchiler\Siyahi.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Ishchiler\Yarat.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Istifadechiler\Siyahi.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Qaydalar\Index.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Reklam\Index.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetActiveAnnouncementsByPagePartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetBanAnnouncementsByPagePartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetEmployeesByPagePartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetMessagesByPagePartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetPendingAnnouncementsByPagePartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetPositionsByPagePartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetUsersByPagePartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_AdminLayout.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Vezife\Siyahi.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Vezife\Yarat.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\AJAX\GetAlikeAnnouncements.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\AJAX\GetMoreSearchResults.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\AJAX\GetMostViewedAnnouncements.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\AJAX\GetRecentAnnouncements.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\AJAX\GetSearchResult.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\AJAX\GetUserAnnouncements.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\AJAX\GetVipAnnouncements.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Anasehife\Index.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Elan.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Elangozleyen.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Elanyerleshdir.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Istifadechininelanlari.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elaqe\Index.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Haqqimizda\Index.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Girish.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Istifadechininmelumatlari.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Menimhesabim.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Qeydiyyat.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Shifrenideyish.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Shifreniunutdum.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Tesdiqetme.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Qaydalar\Index.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Advertisement\Default.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetAlikeAnnouncementsPartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetMoreSearchResultsPartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetMostViewedAnnouncementsPartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetRecentAnnouncementsPartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetSearchResultPartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetUserAnnouncementsPartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetVipAnnouncementsPartialView.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Xeta\Index.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorTargetAssemblyInfo.cache
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorTargetAssemblyInfo.cs
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.pdb
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.Views.dll
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.Views.pdb
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.Views.pdb
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.dll
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.pdb
+C:\Users\KAMAL\source\repos\CodeAcademyFinal\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.csproj.CopyComplete
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\libman.json
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.deps.json
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.runtimeconfig.json
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.runtimeconfig.dev.json
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.dll
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.pdb
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.Views.dll
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.Views.pdb
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.csprojAssemblyReference.cache
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorAssemblyInfo.cache
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorAssemblyInfo.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.AssemblyInfoInputs.cache
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.AssemblyInfo.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.TagHelpers.input.cache
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.TagHelpers.output.cache
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorCoreGenerate.cache
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Anasehife\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Aktiv.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Elan.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Gozleyen.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Tesdiqedilmemish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Gelenmektublar\Mektub.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Gelenmektublar\Siyahi.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Hesab\Girish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Hesab\Shifrenideyish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Ishchiler\Siyahi.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Ishchiler\Yarat.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Istifadechiler\Siyahi.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Qaydalar\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Reklam\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetActiveAnnouncementsByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetBanAnnouncementsByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetEmployeesByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetMessagesByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetPendingAnnouncementsByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetPositionsByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetUsersByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Vezife\Siyahi.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Vezife\Yarat.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Anasehife\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Elan.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Elangozleyen.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Elanyerleshdir.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Istifadechininelanlari.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elaqe\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Haqqimizda\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Girish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Istifadechininmelumatlari.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Menimhesabim.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Qeydiyyat.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Shifrenideyish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Shifreniunutdum.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Tesdiqetme.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Qaydalar\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Advertisement\Default.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetAlikeAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetMoreSearchResultsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetMostViewedAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetRecentAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetSearchResultPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetUserAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetVipAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Xeta\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorTargetAssemblyInfo.cache
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorTargetAssemblyInfo.cs
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.Views.pdb
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.dll
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.pdb
+D:\Programming\Other\DEPLOY - Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.csproj.CopyComplete
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\libman.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.deps.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.runtimeconfig.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.runtimeconfig.dev.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.dll
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.pdb
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.Views.dll
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.Views.pdb
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.csprojAssemblyReference.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorAssemblyInfo.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorAssemblyInfo.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.AssemblyInfoInputs.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.AssemblyInfo.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.TagHelpers.input.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.TagHelpers.output.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorCoreGenerate.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Anasehife\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Aktiv.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Elan.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Gozleyen.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Tesdiqedilmemish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Gelenmektublar\Mektub.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Gelenmektublar\Siyahi.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Hesab\Girish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Hesab\Shifrenideyish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Ishchiler\Siyahi.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Ishchiler\Yarat.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Istifadechiler\Siyahi.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Qaydalar\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Reklam\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetActiveAnnouncementsByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetBanAnnouncementsByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetEmployeesByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetMessagesByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetPendingAnnouncementsByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetPositionsByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetUsersByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Vezife\Siyahi.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Vezife\Yarat.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Anasehife\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Elan.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Elangozleyen.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Elanyerleshdir.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Istifadechininelanlari.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elaqe\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Haqqimizda\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Girish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Istifadechininmelumatlari.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Menimhesabim.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Qeydiyyat.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Shifrenideyish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Shifreniunutdum.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Tesdiqetme.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Qaydalar\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Advertisement\Default.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetAlikeAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetMoreSearchResultsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetMostViewedAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetRecentAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetSearchResultPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetUserAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetVipAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Xeta\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorTargetAssemblyInfo.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorTargetAssemblyInfo.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.Views.pdb
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.dll
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.pdb
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.csproj.CopyComplete
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\libman.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.deps.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.runtimeconfig.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.runtimeconfig.dev.json
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.dll
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.pdb
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.Views.dll
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\bin\Debug\netcoreapp2.1\CodeAcademyFinal.Views.pdb
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.csprojAssemblyReference.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorAssemblyInfo.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorAssemblyInfo.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.AssemblyInfoInputs.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.AssemblyInfo.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.TagHelpers.input.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.TagHelpers.output.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorCoreGenerate.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Anasehife\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Aktiv.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Elan.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Gozleyen.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Elanlar\Tesdiqedilmemish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Gelenmektublar\Mektub.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Gelenmektublar\Siyahi.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Hesab\Girish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Hesab\Shifrenideyish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Ishchiler\Siyahi.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Ishchiler\Yarat.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Istifadechiler\Siyahi.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Qaydalar\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Reklam\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetActiveAnnouncementsByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetBanAnnouncementsByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetEmployeesByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetMessagesByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetPendingAnnouncementsByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetPositionsByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\GetUsersByPagePartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Vezife\Siyahi.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Vezife\Yarat.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Anasehife\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Elan.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Elangozleyen.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Elanyerleshdir.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elanlar\Istifadechininelanlari.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Elaqe\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Haqqimizda\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Girish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Istifadechininmelumatlari.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Menimhesabim.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Qeydiyyat.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Shifrenideyish.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Shifreniunutdum.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Hesab\Tesdiqetme.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Qaydalar\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\Advertisement\Default.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetAlikeAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetMoreSearchResultsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetMostViewedAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetRecentAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetSearchResultPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetUserAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\GetVipAnnouncementsPartialView.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\Xeta\Index.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorTargetAssemblyInfo.cache
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.RazorTargetAssemblyInfo.cs
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.Views.pdb
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.dll
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.pdb
+D:\Programming\Other\DEPLOY - Kirayemlak Final Project by KamalGuliyev CodeAcademy - Copy\CodeAcademyFinal\obj\Debug\netcoreapp2.1\CodeAcademyFinal.csproj.CopyComplete

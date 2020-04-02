@@ -1,0 +1,96 @@
+﻿@model IQueryable<Message>     
+
+@{ 
+    int number = 1;
+}  
+
+<div class="row">
+    <div class="col-12 table-container-for-messages">
+        <h3 class="mb-3">Gələn məktublar</h3>
+        @if ((ViewBag.AllMessages / 10) > 0)
+        {
+            <table data-id="1" class="table table-hover table-bordered ">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>№</th>
+                        <th>Ad, Soyad</th>
+                        <th>Email</th>
+                        <th>Telefon</th>
+                        <th>Tarix</th>
+                        <th>Mövzu</th>
+                        <th>Müraciət</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var message in Model)
+                    {
+                    <tr>
+                        <td>@(number++)</td>
+                        <td>@message.FullName</td>
+                        <td>@message.Email</td>
+                        <td>@message.PhoneNumber</td>
+                        <td>@message.SentTime.ToString("dd/MM/yyyy")</td>
+                        <td>@message.Subject</td>
+                        <td>
+                            <a asp-area="Admin" asp-controller="Gelenmektublar" asp-action="Mektub" asp-route-id="@message.Id">
+                                <i class="fas fa-info-circle info-icon" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <table data-id="1" class="table table-hover table-bordered active">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>№</th>
+                        <th>Ad, Soyad</th>
+                        <th>Email</th>
+                        <th>Telefon</th>
+                        <th>Mövzu</th>
+                        <th>Müraciət</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="6" style="text-align:center;font-size:30px;">Siyahı boşdur</td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="hidden" class="page-count" value="1" />
+        }
+
+        @if ((ViewBag.AllMessages / 10).ToString().Contains("."))
+        {
+            @if ((((((ViewBag.AllMessages / 10) - (Math.Round(ViewBag.AllMessages / 10))) * 10) <= 5) && ((((ViewBag.AllMessages / 10) - (Math.Round(ViewBag.AllMessages / 10))) * 10) > 0)))
+            {
+                <input type="hidden" class="page-count" value="@(Math.Round(ViewBag.AllMessages / 10) + 1)" />
+            }
+            else
+            {
+                <input type="hidden" class="page-count" value="@(Math.Round(ViewBag.AllMessages / 10))" />
+            }
+        }
+        else
+        {
+            <input type="hidden" class="page-count" value="@(ViewBag.AllMessages / 10)" />
+        }
+
+    </div>
+</div>
+
+<div class="row my-5">
+    <div class="col-12 pagination-container-for-messages d-flex justify-content-center">
+        <div class="pagination-container d-flex">
+            <div class="prev-page d-flex justify-content-center align-items-center">Əvvəlki</div>
+            <div class="pagination-window">
+                <ul class="pagination-lent m-0 p-0 d-flex">
+                </ul>
+            </div>
+            <div class="next-page d-flex justify-content-center align-items-center">Növbəti</div>
+        </div>
+    </div>
+</div>

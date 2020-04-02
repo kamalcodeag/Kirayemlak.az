@@ -1,0 +1,122 @@
+﻿@model IQueryable<CustomUser>
+@inject UserManager<CustomUser> _userManager
+
+@{
+    int number = 1;
+}
+
+        <!-- ---TEMPDATA EMPLOYEE CREATED DELETED--- -->
+        <div class="row mb-5">
+            <div class="col-xs-12">
+                @if (TempData["EmployeeCreated"] != null)
+                {
+                    <p class="text-success">Yeni işçi yarandı.</p>
+                }
+                @if (TempData["EmployeeDeleted"] != null)
+                {
+                    <p class="text-success">Seçdiyiniz işçi sistemdən silindi.</p>
+                }
+            </div>
+        </div>
+        <!-- +++TEMPDATA EMPLOYEE CREATED DELETED+++ -->
+
+        <div class="row">
+            <div class="col-12 table-container-for-employees">
+                <h3 class="mb-3">İşçilərin siyahısı</h3>
+                @if ((ViewBag.AllEmployees / 10) > 0)
+                {
+                    <table data-id="1" class="table table-hover table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>№</th>
+                                <th>İstifadəçi adı</th>
+                                <th>Vəzifə</th>
+                                <th>Əməliyyatlar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var customUser in Model)
+                            {
+                                if (!await _userManager.IsInRoleAsync(customUser, "İstifadəçi"))
+                                {
+                                    <tr>
+                                        <td>@(number++)</td>
+                                        <td>@customUser.UserName</td>
+                                        <td>@((await _userManager.GetRolesAsync(customUser)).FirstOrDefault())</td>
+                                        <td>
+                                            <i data-id="@customUser.Id" class="fas fa-trash"></i>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <table data-id="1" class="table table-hover table-bordered active">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>№</th>
+                                <th>İstifadəçi adı</th>
+                                <th>Vəzifə</th>
+                                <th>Əməliyyatlar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="text-align:center;font-size:30px;">Siyahı boşdur</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="hidden" class="page-count" value="1" />
+                }
+
+                @if ((ViewBag.AllEmployees / 10).ToString().Contains("."))
+                {
+                    @if ((((((ViewBag.AllEmployees / 10) - (Math.Round(ViewBag.AllEmployees / 10))) * 10) <= 5) && ((((ViewBag.AllEmployees / 10) - (Math.Round(ViewBag.AllEmployees / 10))) * 10) > 0)))
+                    {
+                        <input type="hidden" class="page-count" value="@(Math.Round(ViewBag.AllEmployees / 10) + 1)" />
+                    }
+                    else
+                    {
+                        <input type="hidden" class="page-count" value="@(Math.Round(ViewBag.AllEmployees / 10))" />
+                    }
+                }
+                else
+                {
+                    <input type="hidden" class="page-count" value="@(ViewBag.AllEmployees / 10)" />
+                }
+
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-12 pagination-container-for-employees d-flex justify-content-center">
+                <div class="pagination-container d-flex">
+                    <div class="prev-page d-flex justify-content-center align-items-center">Əvvəlki</div>
+                    <div class="pagination-window">
+                        <ul class="pagination-lent m-0 p-0 d-flex">
+                        </ul>
+                    </div>
+                    <div class="next-page d-flex justify-content-center align-items-center">Növbəti</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 announcement-delete-container-col d-none">
+                <form asp-area="Admin" asp-controller="Ishchiler" asp-action="Sil" method="post" class="row announcement-delete-container">
+                    <div class="col-12">
+                        <p>Silməyə əminsiniz ?</p>
+                    </div>
+                    <div class="col-6">
+                        <input type="hidden" value="" name="userId" class="delete-position" />
+                        <input class="announcement-delete-yes input-login-register-pages input-btn-login-register"
+                               type="submit" value="Bəli">
+                    </div>
+                    <div class="col-6">
+                        <input class="announcement-delete-no input-login-register-pages input-btn-login-register"
+                               type="button" value="Xeyr">
+                    </div>
+                </form>
+            </div>
+        </div>

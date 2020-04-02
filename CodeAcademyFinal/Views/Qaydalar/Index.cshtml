@@ -1,0 +1,50 @@
+﻿@model Rule
+
+<!-- LAYER FOR HEADER section start -->
+<section id="layer-for-header">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+        </div>
+    </div>
+</section>
+<!-- LAYER FOR HEADER section end -->
+<!-- RULES section start -->
+<section id="rules">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="about-text-container">
+                        <h3 class="page-heading" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
+                            QAYDALAR
+                        </h3>
+                        <p data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                           data-aos-duration="500">
+                            @Model.RuleText
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="about-image-container">
+                        <img src="~/MainPageFiles/images/house-rules.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- RULES section end -->
+
+@section scripts
+{
+    <!-- ---JAVASCRIPT SCROLL EFFECTS DATA-AOS--- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- +++JAVASCRIPT SCROLL EFFECTS DATA-AOS+++ -->
+}
+
+
+

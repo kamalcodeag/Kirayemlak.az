@@ -1,0 +1,282 @@
+﻿@model HomeViewModel
+
+    <!-- SEARCH section start -->
+    <section id="search-area">
+        <div class="container-fluid" style="background-image: url('@Url.Content("~/MainPageFiles/images/baku-flame-towers.jpg")')">
+            <div class="custom-container-fluid">
+                <div class="search-overlay">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="search-form-container">
+                                <form method="get" class="search-area-form">
+                                    <select asp-items="@(new SelectList(ViewBag.Durations, "Id", "DurationType"))" class="search-time"></select>
+                                    <select asp-items="@(new SelectList(ViewBag.Estates, "Id", "EstateName"))" class="search-property"></select>
+                                    <select asp-items="@(new SelectList(ViewBag.Rooms, "Id", "RoomType"))" class="search-rooms"></select>
+                                    <input class="search-square" type="text" placeholder="Sahə(sot,m²)">
+                                    <input class="search-price" type="number" min="0" placeholder="Qiymət(maksimum)">
+                                    <select asp-items="@(new SelectList(ViewBag.Cities, "Id", "CityName"))" class="search-location"></select>
+                                    <input type="submit" class="search-btn-search" value="Axtar" style="padding:5px 0px;">
+                                </form>
+                                <input class="duration-for-more-search-results" type="hidden" value="" />
+                                <input class="estate-for-more-search-results" type="hidden" value="" />
+                                <input class="room-for-more-search-results" type="hidden" value="" />
+                                <input class="area-for-more-search-results" type="hidden" value="" />
+                                <input class="price-for-more-search-results" type="hidden" value="" />
+                                <input class="city-for-more-search-results" type="hidden" value="" />
+                            </div>
+                        </div>
+                        @*<div class="col-xs-12 website-name-col">
+                            <div class="website-name">
+                                <h1 style="font-size:40px!important;">Kirayemlak.az</h1>
+                            </div>
+                        </div>*@
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="clouds-container">
+                                <img src="~/MainPageFiles/images/cloud1.png">
+                                <img src="~/MainPageFiles/images/cloud2.png">
+                                <img src="~/MainPageFiles/images/cloud3.png">
+                                <img src="~/MainPageFiles/images/cloud1.png">
+                                <img src="~/MainPageFiles/images/cloud2.png">
+                                <img src="~/MainPageFiles/images/cloud3.png">
+                                <img src="~/MainPageFiles/images/cloud1.png">
+                                <img src="~/MainPageFiles/images/cloud2.png">
+                                <img src="~/MainPageFiles/images/cloud1.png">
+                                <img src="~/MainPageFiles/images/cloud3.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- SEARCH section end -->
+    <!-- VIP-RECENT ANNOUNCEMENTS section start -->
+    <section id="vip-recent-announcements">
+        <div class="container-fluid">
+            <div class="custom-container-fluid">
+                <!-- VIP ANNOUNCEMENTS section start -->
+                <div class="row vip-heading-container" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="col-xs-12">
+                        <div class="vip-heading">
+                            <h3>
+                                VIP <span>ELANLAR</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row vip-row-for-load-more">
+                    @foreach (var vipAnnouncement in Model.VIP_Announcements.Take(6))
+                    {
+                        <div class="vra-col col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                            <i data-info="@vipAnnouncement.Estate.EstateName@vipAnnouncement.Id@vipAnnouncement.CustomUserId" class="far fa-heart favourite-heart-empty"></i>
+                            <i data-info="@vipAnnouncement.Estate.EstateName@vipAnnouncement.Id@vipAnnouncement.CustomUserId" class="fas fa-heart favourite-heart-filled"></i>
+                            <a asp-controller="Elanlar" asp-action="Elan" asp-route-id="@vipAnnouncement.Id" class="text-decoration-none">
+                                <div class="vip-items-container">
+                                    <div class="vip-items-top">
+                                        <img src="~/MainPageFiles/images/announcements/@vipAnnouncement.AnnouncementPhotos.FirstOrDefault().AnnouncementPhotoURL">
+                                        <div class="vip-overlay"></div>
+                                        <div class="vip-items-top-details">
+                                            <div class="photo-count-container">
+                                                <i class="fas fa-camera camera-photo"></i>
+                                                <span>@vipAnnouncement.AnnouncementPhotos.Count()</span>
+                                            </div>
+                                            <p>@vipAnnouncement.Price AZN / @(vipAnnouncement.Duration.DurationType == "Aylıq" ? "ay" : "gün")</p>
+                                        </div>
+                                    </div>
+                                    <div class="vip-items-bottom">
+                                        <div class="vip-items-bottom-details">
+                                            <div class="vip-property-name">
+                                                <h4>@vipAnnouncement.Estate.EstateName - @(vipAnnouncement.Estate.EstateName == "Mənzil" || vipAnnouncement.Estate.EstateName == "Ev/Villa" ? vipAnnouncement.Room.RoomType : (vipAnnouncement.Estate.EstateName == "Torpaq" ? vipAnnouncement.Area.ToString().Substring(0, vipAnnouncement.Area.ToString().Length - 3) + " sot" : vipAnnouncement.Area + " m²"))</h4>
+                                            </div>
+                                            <div class="vip-announcement-location">
+                                                <h4>@vipAnnouncement.City.CityName</h4>
+                                            </div>
+                                            <div class="vip-announcement-datetime">
+                                                <span>@vipAnnouncement.PublishDate.Day @vipAnnouncement.Month.MonthName @vipAnnouncement.PublishDate.Year</span>
+                                                @if (vipAnnouncement.IsVIP == true)
+                                                {
+                                                    <i class="fas fa-crown vip-crown"></i>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+                @if (Model.VIP_Announcements.Where(announcement => announcement.IsActive == true).Count() > 6)
+                {
+                    <div class="row vip-for-load-more">
+                        <div class="col-sm-4"></div>
+                        <div class="col-xs-12 col-sm-4" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="load-more-container">
+                                <button class="load-more">Daha çox</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+
+                    <div class="row search-result-for-load-more" style="display:none">
+                        <div class="col-sm-4"></div>
+                        <div class="col-xs-12 col-sm-4" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="load-more-container">
+                                <button class="load-more">Daha çox</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                }
+                <input class="skip-count-for-vip-announcements" type="hidden" value="6" />
+                <input class="skip-count-for-search-result-announcements" type="hidden" value="12" />
+                <!-- VIP ANNOUNCEMENTS section END -->
+                <!-- RECENT ANNOUNCEMENTS section start -->
+                <div class="row vip-heading-container recent-heading-container" data-aos="fade-up"
+                     data-aos-duration="3000">
+                    <div class="col-xs-12">
+                        <div class="vip-heading">
+                            <h3>
+                                SON <span>ELANLAR</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row recent-row-for-load-more">
+                    @foreach (var recentAnnouncement in Model.RecentAnnouncements.Take(6))
+                    {
+                        <div class="vra-col col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                            <i data-info="@recentAnnouncement.Estate.EstateName@recentAnnouncement.Id@recentAnnouncement.CustomUserId" class="far fa-heart favourite-heart-empty"></i>
+                            <i data-info="@recentAnnouncement.Estate.EstateName@recentAnnouncement.Id@recentAnnouncement.CustomUserId" class="fas fa-heart favourite-heart-filled"></i>
+                            <a asp-controller="Elanlar" asp-action="Elan" asp-route-id="@recentAnnouncement.Id" class="text-decoration-none">
+                                <div class="vip-items-container">
+                                    <div class="vip-items-top">
+                                        <img src="~/MainPageFiles/images/announcements/@recentAnnouncement.AnnouncementPhotos.FirstOrDefault().AnnouncementPhotoURL">
+                                        <div class="vip-overlay"></div>
+                                        <div class="vip-items-top-details">
+                                            <div class="photo-count-container">
+                                                <i class="fas fa-camera camera-photo"></i>
+                                                <span>@recentAnnouncement.AnnouncementPhotos.Count()</span>
+                                            </div>
+                                            <p>@recentAnnouncement.Price AZN / @(recentAnnouncement.Duration.DurationType == "Aylıq" ? "ay" : "gün")</p>
+                                        </div>
+                                    </div>
+                                    <div class="vip-items-bottom">
+                                        <div class="vip-items-bottom-details">
+                                            <div class="vip-property-name">
+                                                <h4>@recentAnnouncement.Estate.EstateName - @(recentAnnouncement.Estate.EstateName == "Mənzil" || recentAnnouncement.Estate.EstateName == "Ev/Villa" ? recentAnnouncement.Room.RoomType : (recentAnnouncement.Estate.EstateName == "Torpaq" ? recentAnnouncement.Area.ToString().Substring(0, recentAnnouncement.Area.ToString().Length - 3) + " sot" : recentAnnouncement.Area + " m²"))</h4>
+                                            </div>
+                                            <div class="vip-announcement-location">
+                                                <h4>@recentAnnouncement.City.CityName</h4>
+                                            </div>
+                                            <div class="vip-announcement-datetime">
+                                                <span>@recentAnnouncement.PublishDate.Day @recentAnnouncement.Month.MonthName @recentAnnouncement.PublishDate.Year</span>
+                                                @if (recentAnnouncement.IsVIP == true)
+                                                {
+                                                    <i class="fas fa-crown vip-crown"></i>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+                @if (Model.RecentAnnouncements.Where(announcement => announcement.IsActive == true).Count() > 6)
+                {
+                    <div class="row recent-for-load-more">
+                        <div class="col-sm-4"></div>
+                        <div class="col-xs-12 col-sm-4" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="load-more-container">
+                                <button class="load-more">Daha çox</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                }
+                <input class="skip-count-for-recent-announcements" type="hidden" value="6" />
+                <!-- RECENT ANNOUNCEMENTS section end -->
+                <!-- MOST VIEWED ANNOUNCEMENTS section start -->
+                <div class="row vip-heading-container recent-heading-container" data-aos="fade-up"
+                     data-aos-duration="3000">
+                    <div class="col-xs-12">
+                        <div class="vip-heading">
+                            <h3>
+                                ƏN ÇOX BAXILAN <span>ELANLAR</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row most-row-for-load-more">
+                    @foreach (var mostViewedAnnouncement in Model.MostViewedAnnouncements.Take(6))
+                    {
+                        <div class="vra-col col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="3000">
+                            <i data-info="@mostViewedAnnouncement.Estate.EstateName@mostViewedAnnouncement.Id@mostViewedAnnouncement.CustomUserId" class="far fa-heart favourite-heart-empty"></i>
+                            <i data-info="@mostViewedAnnouncement.Estate.EstateName@mostViewedAnnouncement.Id@mostViewedAnnouncement.CustomUserId" class="fas fa-heart favourite-heart-filled"></i>
+                            <a asp-controller="Elanlar" asp-action="Elan" asp-route-id="@mostViewedAnnouncement.Id" class="text-decoration-none">
+                                <div class="vip-items-container">
+                                    <div class="vip-items-top">
+                                        <img src="~/MainPageFiles/images/announcements/@mostViewedAnnouncement.AnnouncementPhotos.FirstOrDefault().AnnouncementPhotoURL">
+                                        <div class="vip-overlay"></div>
+                                        <div class="vip-items-top-details">
+                                            <div class="photo-count-container">
+                                                <i class="fas fa-camera camera-photo"></i>
+                                                <span>@mostViewedAnnouncement.AnnouncementPhotos.Count()</span>
+                                            </div>
+                                            <p>@mostViewedAnnouncement.Price AZN / @(mostViewedAnnouncement.Duration.DurationType == "Aylıq" ? "ay" : "gün")</p>
+                                        </div>
+                                    </div>
+                                    <div class="vip-items-bottom">
+                                        <div class="vip-items-bottom-details">
+                                            <div class="vip-property-name">
+                                                <h4>@mostViewedAnnouncement.Estate.EstateName - @(mostViewedAnnouncement.Estate.EstateName == "Mənzil" || mostViewedAnnouncement.Estate.EstateName == "Ev/Villa" ? mostViewedAnnouncement.Room.RoomType : (mostViewedAnnouncement.Estate.EstateName == "Torpaq" ? mostViewedAnnouncement.Area.ToString().Substring(0, mostViewedAnnouncement.Area.ToString().Length - 3) + " sot" : mostViewedAnnouncement.Area + " m²"))</h4>
+                                            </div>
+                                            <div class="vip-announcement-location">
+                                                <h4>@mostViewedAnnouncement.City.CityName</h4>
+                                            </div>
+                                            <div class="vip-announcement-datetime">
+                                                <span>@mostViewedAnnouncement.PublishDate.Day @mostViewedAnnouncement.Month.MonthName @mostViewedAnnouncement.PublishDate.Year</span>
+                                                @if (mostViewedAnnouncement.IsVIP == true)
+                                                {
+                                                    <i class="fas fa-crown vip-crown"></i>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+                @if (Model.MostViewedAnnouncements.Where(announcement => announcement.IsActive == true).Count() > 6)
+                {
+                    <div class="row most-for-load-more">
+                        <div class="col-sm-4"></div>
+                        <div class="col-xs-12 col-sm-4" data-aos="fade-up" data-aos-duration="3000">
+                            <div class="load-more-container">
+                                <button class="load-more">Daha çox</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                }
+                <input class="skip-count-for-most-announcements" type="hidden" value="6" />
+                <!-- MOST VIEWED ANNOUNCEMENTS section end -->
+            </div>
+        </div>
+        <input class="cookie-favourites-for-user-announcements" type="hidden" value="@ViewBag.Cookie" />
+    </section>
+    <!-- VIP-RECENT ANNOUNCEMENTS section end -->
+
+    @section scripts
+{
+        <!-- ---JAVASCRIPT SCROLL EFFECTS DATA-AOS--- -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- +++JAVASCRIPT SCROLL EFFECTS DATA-AOS+++ -->
+    }

@@ -1,0 +1,105 @@
+﻿@model IQueryable<Announcement>   
+
+@{ 
+    int number = 1;
+}        
+
+<div class="row">
+    <div class="col-12 table-container-for-pending-announcements">
+        <h3 class="mb-3">Gözləyən elanlar</h3>
+        @if ((ViewBag.AllPendingAnnouncements / 10) > 0)
+        {
+            <table data-id="1" class="table table-hover table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>№</th>
+                        <th>Mülk</th>
+                        <th>Sahə(sot, m²)</th>
+                        <th>Otaq sayı</th>
+                        <th>Qiymət(ay)</th>
+                        <th>Qiymət(gün)</th>
+                        <th>Tarix</th>
+                        <th>Şəhər(rayon)</th>
+                        <th>Əlaqədar şəxs</th>
+                        <th>Əməliyyatlar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var pendingAnnouncement in Model)
+                    {
+                        <tr>
+                            <td>@(number++)</td>
+                            <td>@pendingAnnouncement.Estate.EstateName</td>
+                            <td>@(pendingAnnouncement.Estate.EstateName != "Torpaq" ? pendingAnnouncement.Area + " m²" : pendingAnnouncement.Area.ToString().Substring(0, pendingAnnouncement.Area.ToString().Length - 3) + " sot")</td>
+                            <td>@(pendingAnnouncement.Room != null ? pendingAnnouncement.Room.RoomType : "-")</td>
+                            <td>@(pendingAnnouncement.Duration.DurationType == "Aylıq" ? pendingAnnouncement.Price.ToString() + " AZN" : "-")</td>
+                            <td>@(pendingAnnouncement.Duration.DurationType == "Günlük" ? pendingAnnouncement.Price.ToString() + " AZN" : "-")</td>
+                            <td>@pendingAnnouncement.PublishDate.Day  @pendingAnnouncement.Month.MonthName @pendingAnnouncement.PublishDate.Year</td>
+                            <td>@pendingAnnouncement.City.CityName</td>
+                            <td>@pendingAnnouncement.CustomUser.FirstName @pendingAnnouncement.CustomUser.LastName</td>
+                            <td>
+                                <a asp-area="Admin" asp-controller="Elanlar" asp-action="Elan" asp-route-id="@pendingAnnouncement.Id">
+                                    <i class="fas fa-cogs settings-icon" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <table data-id="1" class="table table-hover table-bordered active">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>№</th>
+                        <th>Mülk</th>
+                        <th>Sahə(sot, m²)</th>
+                        <th>Otaq sayı</th>
+                        <th>Qiymət(ay)</th>
+                        <th>Qiymət(gün)</th>
+                        <th>Tarix</th>
+                        <th>Şəhər(rayon)</th>
+                        <th>Əlaqədar şəxs</th>
+                        <th>Əməliyyatlar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="10" style="text-align:center;font-size:30px;">Siyahı boşdur</td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="hidden" class="page-count" value="1" />
+        }
+
+        @if ((ViewBag.AllPendingAnnouncements / 10).ToString().Contains("."))
+        {
+            @if ((((((ViewBag.AllPendingAnnouncements / 10) - (Math.Round(ViewBag.AllPendingAnnouncements / 10))) * 10) <= 5) && ((((ViewBag.AllPendingAnnouncements / 10) - (Math.Round(ViewBag.AllPendingAnnouncements / 10))) * 10) > 0)))
+            {
+                <input type="hidden" class="page-count" value="@(Math.Round(ViewBag.AllPendingAnnouncements / 10) + 1)" />
+            }
+            else
+            {
+                <input type="hidden" class="page-count" value="@(Math.Round(ViewBag.AllPendingAnnouncements / 10))" />
+            }
+        }
+        else
+        {
+            <input type="hidden" class="page-count" value="@(ViewBag.AllPendingAnnouncements / 10)" />
+        }
+
+    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-12 pagination-container-for-pending-announcements d-flex justify-content-center">
+                        <div class="pagination-container d-flex">
+                            <div class="prev-page d-flex justify-content-center align-items-center">Əvvəlki</div>
+                            <div class="pagination-window">
+                                <ul class="pagination-lent m-0 p-0 d-flex">
+                                </ul>
+                            </div>
+                            <div class="next-page d-flex justify-content-center align-items-center">Növbəti</div>
+                        </div>
+                    </div>
+                </div>

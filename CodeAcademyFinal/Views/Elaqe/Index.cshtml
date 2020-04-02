@@ -1,0 +1,83 @@
+﻿@model  Message
+
+<!-- LAYER FOR HEADER section start -->
+<section id="layer-for-header">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+        </div>
+    </div>
+</section>
+<!-- LAYER FOR HEADER section end -->
+<!-- CONTACT section start -->
+<section id="contact">
+    <div class="container-fluid" style="background-image: url('@Url.Content("~/MainPageFiles/images/house-mail.jpg")')">
+        <div class="custom-container-fluid">
+            <!-- ---TEMPDATA MESSAGE SEND--- -->
+            @if (TempData["MessageSent"] != null)
+            {
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="notification-message-tempdata">
+                            Təşəkkür edirik ! Göndərdiyiniz məktub tez bir zamanda
+                            dəyərləndiriləcək.
+                        </p>
+                    </div>
+                </div>
+            }
+            <!-- +++TEMPDATA MESSAGE SEND+++ -->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="contact-overlay"></div>
+                    <h3 class="page-heading">
+                        BİZƏ MÜRACİƏT EDİN
+                    </h3>
+                    <form asp-controller="Elaqe" asp-action="Index" method="post" class="row contact-container">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="FullName" class="contact-fullname" type="text" placeholder="Ad, Soyad">
+                                <span asp-validation-for="FullName" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="Email" class="contact-email" type="email" placeholder="Email">
+                                <span asp-validation-for="Email" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="Subject" class="contact-subject" type="text" placeholder="Mövzu">
+                                <span asp-validation-for="Subject" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="PhoneNumber" class="contact-phone" type="text" placeholder="Telefon">
+                                <span asp-validation-for="PhoneNumber" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <textarea asp-for="MessageText" class="contact-message" placeholder="Müraciətiniz"></textarea>
+                                <span asp-validation-for="MessageText" class="input-error-message contact-message-input-error"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <input class="contact-send" type="submit" value="GÖNDƏR">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CONTACT section end -->
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+}

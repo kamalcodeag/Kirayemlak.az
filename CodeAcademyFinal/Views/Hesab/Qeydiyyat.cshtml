@@ -1,0 +1,119 @@
+﻿@model RegisterViewModel    
+
+<!-- LAYER FOR HEADER section start -->
+<section id="layer-for-header">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+        </div>
+    </div>
+</section>
+<!-- LAYER FOR HEADER section end -->
+<!-- REGISTER section start -->
+<section id="register">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+            <!-- ---TEMPDATA REGISTERED SUCCESSFULLY--- -->
+            @if(TempData["AccountRegistered"] != null)
+            {
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="notification-message-tempdata">
+                            Təbrik edirik ! Uğurla qeydiyyatdan keçdiniz. Zəhmət
+                            olmasa, email ünvanınıza daxil olub hesabınızı təsdiqləyin.
+                        </p>
+                    </div>
+                </div>
+            }
+            <!-- +++TEMPDATA REGISTERED SUCCESSFULLY+++ -->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="page-heading">Qeydiyyat</h3>
+                    <form asp-controller="Hesab" asp-action="Qeydiyyat" method="post" enctype="multipart/form-data" class="row register-container">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <div asp-validation-summary="ModelOnly" class="input-error-message-summary"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="FirstName" class="register-firstname input-login-register-pages"
+                                       placeholder="Ad">
+                                <span asp-validation-for="FirstName" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="LastName"class="register-lastname input-login-register-pages"
+                                       placeholder="Soyad">
+                                <span asp-validation-for="LastName" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="Email"class="register-email input-login-register-pages"
+                                       placeholder="Email">
+                                <span asp-validation-for="Email" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <div class="register-phone-container">
+                                    <select asp-for="MobileOperatorId" asp-items="@(new SelectList(ViewBag.MobileOperators, "Id", "MobileOperatorCode"))" class="select-operator input-login-register-pages">
+                                        
+                                    </select>
+                                    <input asp-for="PhoneNumber"class="register-phone input-login-register-pages" min="0"
+                                           placeholder="Əlaqə nömrəsi">
+                                </div>
+                                <span asp-validation-for="PhoneNumber" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="Password"class="register-password input-login-register-pages" 
+                                       placeholder="Şifrə">
+                                <span asp-validation-for="Password" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="ConfirmPassword"class="register-confirm-password input-login-register-pages"
+                                       placeholder="Təsdiq şifrəsi">
+                                <span asp-validation-for="ConfirmPassword" class="input-error-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="UploadFile" class="input-upload input-login-register-pages">
+                                <i class="fas fa-upload"></i>
+                                <input class="input-upload-mask input-login-register-pages" type="button"
+                                       value="Şəkil yüklə(.jpg və ya .jpeg)">
+                                <span asp-validation-for="UploadFile" class="input-error-message"></span>
+                                <span class="register-message"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <input class="register-submit input-login-register-pages input-btn-login-register"
+                                   type="submit" value="Qeydiyyatdan keç">
+                        </div>
+                        <div class="col-xs-12">
+                            <a asp-controller="Hesab" asp-action="Girish" class="text-decoration-none">
+                                <input class="register-login input-login-register-pages input-btn-login-register"
+                                       type="button" value="Şəxsi hesaba giriş">
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- REGISTER section end -->
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+}

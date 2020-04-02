@@ -1,0 +1,37 @@
+﻿@model IQueryable<Announcement>
+
+@{
+    int number = ViewBag.Number;
+}
+
+<table data-id="@ViewBag.DataId" class="table table-hover table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>№</th>
+            <th>Mülk</th>
+            <th>Sahə(sot, m²)</th>
+            <th>Otaq sayı</th>
+            <th>Qiymət(ay)</th>
+            <th>Qiymət(gün)</th>
+            <th>Tarix</th>
+            <th>Şəhər(rayon)</th>
+            <th>Əlaqədar şəxs</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var activeAnnouncement in Model)
+        {
+            <tr>
+                <td>@(number++)</td>
+                <td>@activeAnnouncement.Estate.EstateName</td>
+                <td>@(activeAnnouncement.Estate.EstateName != "Torpaq" ? activeAnnouncement.Area + " m²" : activeAnnouncement.Area.ToString().Substring(0, activeAnnouncement.Area.ToString().Length - 3) + " sot")</td>
+                <td>@(activeAnnouncement.Room != null ? activeAnnouncement.Room.RoomType : "-")</td>
+                <td>@(activeAnnouncement.Duration.DurationType == "Aylıq" ? activeAnnouncement.Price.ToString() + " AZN" : "-")</td>
+                <td>@(activeAnnouncement.Duration.DurationType == "Günlük" ? activeAnnouncement.Price.ToString() + " AZN" : "-")</td>
+                <td>@activeAnnouncement.PublishDate.Day  @activeAnnouncement.Month.MonthName @activeAnnouncement.PublishDate.Year</td>
+                <td>@activeAnnouncement.City.CityName</td>
+                <td>@activeAnnouncement.CustomUser.FirstName @activeAnnouncement.CustomUser.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table>

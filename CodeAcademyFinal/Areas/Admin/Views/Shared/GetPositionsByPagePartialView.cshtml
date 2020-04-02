@@ -1,0 +1,27 @@
+﻿@model IQueryable<IdentityRole>
+
+@{
+    int number = ViewBag.Number;
+}
+
+<table data-id="@ViewBag.DataId" class="table table-hover table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>№</th>
+            <th>Ad</th>
+            <th>Əməliyyatlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var position in Model)
+        {
+            <tr>
+                <td>@(number++)</td>
+                <td>@position.Name</td>
+                <td>
+                    <i data-id="@position.Id" class="fas fa-trash"></i>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

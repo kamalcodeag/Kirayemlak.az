@@ -1,0 +1,145 @@
+﻿@model  CreateAnnouncementViewModel
+
+<!-- LAYER FOR HEADER section start -->
+<section id="layer-for-header">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+        </div>
+    </div>
+</section>
+<!-- LAYER FOR HEADER section end -->
+<!-- CREATE ANNOUNCE section start -->
+<section id="create-announcement">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+            @if (TempData["SimpleAnnouncementLimit"] != null)
+            {
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="notification-message-tempdata">
+                            30 gün ərzində 1 ödənişsiz elan yerləşdirə bilərsiniz.
+                        </p>
+                    </div>
+                </div>
+            }
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="page-heading">Elan yerləşdir</h3>
+                    <form asp-controller="Elanlar" asp-action="Elanyerleshdir" method="post" enctype="multipart/form-data" class="row create-announcement-container">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <div asp-validation-summary="ModelOnly" class="input-error-message-summary"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <select asp-for="EstateId" asp-items="@(new SelectList(ViewBag.Estates, "Id", "EstateName"))" class="create-announcement-property input-login-register-pages"></select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <select asp-for="RoomId" asp-items="@(new SelectList(ViewBag.Rooms, "Id", "RoomType"))" class="create-announcement-rooms input-login-register-pages"></select>
+                                <div class="create-announcement-square-container">
+                                    <input asp-for="AreaParticular" data-val="true" data-val-number="Zəhmət olmasa, düzgün parameter daxil edin" data-val-required="Zəhmət olmasa, boşluğu doldurun" class="create-announcement-square input-login-register-pages"
+                                           placeholder="Sahə(sot,m²)">
+                                    <!-- ---VALIDATION MESSAGE--- -->
+                                    <span data-valmsg-for="AreaParticular" data-valmsg-replace="true" class="input-error-message"></span>
+                                    <!-- +++VALIDATION MESSAGE+++ -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <div class="create-announcement-square-container-for-specials">
+                                    <input asp-for="Area" data-val="true" data-val-number="Zəhmət olmasa, düzgün parameter daxil edin" data-val-required="Zəhmət olmasa, boşluğu doldurun" class="create-announcement-square input-login-register-pages"
+                                           placeholder="Sahə(sot,m²)">
+                                    <!-- ---VALIDATION MESSAGE--- -->
+                                    <span data-valmsg-for="Area" data-valmsg-replace="true" class="input-error-message"></span>
+                                    <!-- +++VALIDATION MESSAGE+++ -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <select asp-for="DurationId" asp-items="@(new SelectList(ViewBag.Durations, "Id", "DurationType"))" class="create-announcement-time input-login-register-pages"></select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <input asp-for="Price" class="create-announcement-price input-login-register-pages"
+                                       min="0" placeholder="Qiymət(AZN)">
+                                <!-- ---VALIDATION MESSAGE--- -->
+                                <span asp-validation-for="Price" class="input-error-message"></span>
+                                <!-- +++VALIDATION MESSAGE+++ -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                                <select asp-for="CityId" asp-items="@(new SelectList(ViewBag.Cities, "Id", "CityName"))" class="create-announcement-location input-login-register-pages"></select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <input asp-for="UploadFiles" class="create-announcement-input-upload input-upload input-login-register-pages"
+                                       multiple>
+                                <i class="fas fa-upload"></i>
+                                <input class="input-upload-mask input-login-register-pages" type="button"
+                                       value="Şəkil yüklə(minimum 4)">
+                                <span class="register-message">@*3 şəkil seçilib*@</span>
+                                <!-- ---VALIDATION MESSAGE--- -->
+                                <span asp-validation-for="UploadFiles" class="input-error-message">@*Şəkillərin(.jpg, .jpeg) sayı 4-dən az ola bilməz*@</span>
+                                <!-- +++VALIDATION MESSAGE+++ -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <textarea asp-for="Details" class="create-announcement-message input-login-register-pages"
+                                          placeholder="Ətraflı məlumat"></textarea>
+                                <!-- ---VALIDATION MESSAGE--- -->
+                                <span asp-validation-for="Details" class="input-error-message contact-message-input-error"></span>
+                                <!-- +++VALIDATION MESSAGE+++ -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <input asp-for="IsVIP">
+                                <label>VIP</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <input asp-for="BeenReadRules" type="checkbox" class="checkbox-for-submit-disabled">
+                                <label>
+                                    <a asp-controller="Qaydalar" asp-action="Index" target="_blank" class="text-decoration-none">
+                                        Qaydaları
+                                    </a>
+                                    oxudum və tam məsuliyyətlə qəbul edirəm.
+                                </label>
+                                <!-- ---VALIDATION MESSAGE--- -->
+                                <span asp-validation-for="BeenReadRules" class="input-error-message input-error-message-rules">
+                                </span>
+                                <!-- +++VALIDATION MESSAGE+++ -->
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <input class="submit-for-checkbox-checked create-announcement-submit input-login-register-pages input-btn-login-register"
+                                       type="submit" value="Yerləşdir">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CREATE ANNOUNCE section end -->
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+}
+

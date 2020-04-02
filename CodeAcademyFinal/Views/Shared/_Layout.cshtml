@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157528055-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157528055-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="description" content="www.kirayemlak.az - Azərbaycanda daşınmaz əmlakın aylıq və günlük kirayəsi üçün nəzərdə tutulmuşdur. Veb portal Code Academy tədris mərkəzinin məzunu Kamal Quliyevin tədris müddətinin son mərhələsində təqdim etdiyi final layihəsidir.">
+    <meta name="keywords"
+          content="kiraye,icare,satish,dashinmaz,emlak,mulk,menzil,ev,villa,bag,torpaq,qaraj,ofis,obyekt,ayliq,gunluk,reklam,rent,house,home,estate,garden,property,sale">
+    <meta name="author" content="Kamal Quliyev">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kirayemlak.az - Daşınmaz əmlakın aylıq və günlük kirayəsi</title>
+    <link rel="icon" sizes="120x120" href="~/MainPageFiles/images/IconEstate.png">
+    <link rel="stylesheet" href="~/MainPageFiles/css/reset.css">
+    <script async src="https://kit.fontawesome.com/8fa1777ed8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/MainPageFiles/fonts/maven-pro-light.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="~/MainPageFiles/css/combine.css">
+</head>
+
+<body>
+
+    <!-- LOADER section start -->
+    <div class="loader-container">
+        <img src="~/MainPageFiles/images/house-loader.gif">
+    </div>
+    <!-- LOADER section end -->
+    <!-- HEADER start-->
+    <header>
+        <nav>
+            <div class="container-fluid">
+                <div class="custom-container-fluid">
+                    <div class="row header-items">
+                        <div class="col-xs-6 col-md-2">
+                            <a asp-controller="AnaSehife" asp-action="Index">
+                                <img class="house-logo" src="~/MainPageFiles/images/LogoKirayemlak.jpg" alt="kirayemlak.az">
+                            </a>
+                        </div>
+                        <!-- Responsive HEADER -->
+                        <div class="col-xs-6 resp-nav-menu">
+                            <i class="fas fa-align-right toggle-bars"></i>
+                            <ul class="resp-nav-links">
+                                <li><i class="fas fa-times-circle btn-close"></i></li>
+                                <li class="@(ViewBag.Home == "Home" ? "page-active" : "")">
+                                    <a class="text-decoration-none" asp-controller="AnaSehife" asp-action="Index">Ana səhifə</a>
+                                </li>
+                                <li class="@(ViewBag.About == "About" ? "page-active" : "")">
+                                    <a class="text-decoration-none" asp-controller="Haqqimizda" asp-action="Index">Haqqımızda</a>
+                                </li>
+                                <li class="@(ViewBag.Rules == "Rules" ? "page-active" : "")">
+                                    <a class="text-decoration-none" asp-controller="Qaydalar" asp-action="Index">Qaydalar</a>
+                                </li>
+                                <li class="@(ViewBag.Contact == "Contact" ? "page-active" : "")">
+                                    <a class="text-decoration-none" asp-controller="Elaqe" asp-action="Index">Əlaqə</a>
+                                </li>
+
+                                @if (!User.Identity.IsAuthenticated)
+                                {
+                                    <!-- ---LOG IN--- -->
+                                    <li class="header-account-login">
+                                        <a class="text-decoration-none" asp-controller="Hesab" asp-action="Girish">
+                                            <i class="fas fa-sign-in-alt"></i>
+                                        </a>
+                                    </li>
+                                    <!-- +++LOG IN+++ -->
+                                }
+                                else
+                                {
+                                    <!-- ---LOG OUT--- -->
+                                    <li class="header-account-logout">
+                                        <a class="text-decoration-none" asp-controller="Hesab" asp-action="Chixish">
+                                            <i class="fas fa-sign-out-alt"></i>
+                                        </a>
+                                    </li>
+                                    <!-- +++LOG OUT+++ -->
+                                    <!-- ---MY PROFILE--- -->
+                                    <li class="@(ViewBag.MyAccount == "MyAccount" ? "page-active" : "") header-account-myprofile">
+                                        <a class="text-decoration-none" asp-controller="Hesab" asp-action="Menimhesabim">
+                                            <i class="fas fa-user"></i>
+                                        </a>
+                                    </li>
+                                    <!-- +++MY PROFILE+++ -->
+                                }
+
+
+                                <li>
+                                    <a class="text-decoration-none" asp-controller="Elanlar" asp-action="Elanyerleshdir">
+                                        <div class="btn-container">
+                                            <i class="fas fa-plus"></i>
+                                            <p>Elan yerləşdir</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- +++Responsive HEADER+++ -->
+                        </div>
+                        <div class="col-md-7">
+                            <ul class="nav-links">
+                                <li class="@(ViewBag.Home == "Home" ? "page-active" : "")">
+                                    <a class="text-decoration-none" asp-controller="AnaSehife" asp-action="Index">Ana səhifə</a>
+                                </li>
+                                <li class="@(ViewBag.About == "About" ? "page-active" : "")">
+                                    <a class="text-decoration-none" asp-controller="Haqqimizda" asp-action="Index">Haqqımızda</a>
+                                </li>
+                                <li class="@(ViewBag.Rules == "Rules" ? "page-active" : "")">
+                                    <a class="text-decoration-none" asp-controller="Qaydalar" asp-action="Index">Qaydalar</a>
+                                </li>
+                                <li class="@(ViewBag.Contact == "Contact" ? "page-active" : "")">
+                                    <a class="text-decoration-none" asp-controller="Elaqe" asp-action="Index">Əlaqə</a>
+                                </li>
+
+                                @if (!User.Identity.IsAuthenticated)
+                                {
+                                    <!-- ---LOG IN--- -->
+                                    <li class="header-account-login">
+                                        <a class="text-decoration-none" asp-controller="Hesab" asp-action="Girish">
+                                            <i class="fas fa-sign-in-alt"></i>
+                                        </a>
+                                    </li>
+                                    <!-- +++LOG IN+++ -->
+                                }
+                                else
+                                {
+                                    <!-- ---LOG OUT--- -->
+                                    <li class="header-account-logout">
+                                        <a class="text-decoration-none" asp-controller="Hesab" asp-action="Chixish">
+                                            <i class="fas fa-sign-out-alt"></i>
+                                        </a>
+                                    </li>
+                                    <!-- +++LOG OUT+++ -->
+                                    <!-- ---MY PROFILE--- -->
+                                    <li class="@(ViewBag.MyAccount == "MyAccount" ? "page-active" : "") header-account-myprofile">
+                                        <a class="text-decoration-none" asp-controller="Hesab" asp-action="Menimhesabim">
+                                            <i class="fas fa-user"></i>
+                                        </a>
+                                    </li>
+                                    <!-- +++MY PROFILE+++ -->
+                                }
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-md-3 resp-btn-container-col">
+                            <a class="text-decoration-none" asp-controller="Elanlar" asp-action="Elanyerleshdir">
+                                <div class="btn-container">
+                                    <i class="fas fa-plus"></i>
+                                    <p>Elan yerləşdir</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER end -->
+
+    @RenderBody()
+
+    @*<!-- ADVERTISEMENT section start -->
+        <aside id="left-advertisement" style="background-image: url('@Url.Content("~/MainPageFiles/images/advertisements/adv.jpg")');">
+            <div class="advertisement-container">
+            </div>
+        </aside>
+        <aside id="right-advertisement" style="background-image: url('@Url.Content("~/MainPageFiles/images/advertisements/adv.jpg")');">
+            <div class="advertisement-container">
+            </div>
+        </aside>
+        <!-- ADVERTISEMENT section end -->*@
+
+    @await Component.InvokeAsync("Advertisement")
+
+    <!-- BUTTON UP SCROLL section start -->
+    <div id="btn-up-scroll-container">
+        <i class="fas fa-chevron-up chevron-up"></i>
+    </div>
+    <!-- BUTTON UP SCROLL section start -->
+    <!-- FOOTER start -->
+    <footer>
+        <div class="container-fluid">
+            <div class="custom-container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="footer-container">
+                            <p class="footer-copyright">© Kirayemlak.az Müəllif hüquqları qorunur</p>
+                            <p class="footer-responsibility">
+                                Saytın rəhbərliyi reklam bannerlərinin və yerləşdirilmiş
+                                elanların məzmununa görə məsuliyyət daşımır
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER end -->
+    
+    <!-- ---jQuery CONNECTION--- -->
+    <script src="~/MainPageFiles/js/jQueryConnection.js"></script>
+    <!-- +++jQuery CONNECTION+++ -->
+
+    @RenderSection("scripts", required: false)
+
+    <!-- ---CUSTOM JAVASCRIPT--- -->
+    <script src="~/MainPageFiles/js/main.js"></script>
+    <!-- +++CUSTOM JAVASCRIPT+++ -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+﻿@model  AdminEmployeeViewModel
+
+<h3 class="mb-5">Yeni işçi yarat</h3>
+<form asp-area="Admin" asp-controller="Ishchiler" asp-action="Yarat" method="post" class="row">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div class="col-12">
+        <input asp-for="UserName" class="form-group" placeholder="İstifadəçi adı">
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <input asp-for="Email" class="form-group" placeholder="Email">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <input asp-for="Password" class="form-group" placeholder="Şifrə">
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <input asp-for="ConfirmPassword" class="form-group" placeholder="Təsdiq şifrəsi">
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <select asp-for="RoleId" asp-items="@(new SelectList(ViewBag.Roles, "Id", "Name"))" class="form-group">
+        </select>
+    </div>
+    <div class="col-12">
+        <input type="submit" class="form-group btn btn-primary" value="Təsdiqlə">
+    </div>
+</form>
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+}

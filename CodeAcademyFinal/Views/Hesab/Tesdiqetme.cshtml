@@ -1,0 +1,51 @@
+﻿    <!-- LAYER FOR HEADER section start -->
+<section id="layer-for-header">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+        </div>
+    </div>
+</section>
+<!-- LAYER FOR HEADER section end -->
+<!-- CONFIRMATION section start -->
+<section id="confirmation">
+    <div class="container-fluid">
+        <div class="custom-container-fluid">
+            <!-- ---TEMPDATA ACCOUNT CONFIRMED--- -->
+            @if(TempData["AccountConfirmed"] != null)
+            {
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="notification-message-tempdata">
+                            Təbrik edirik ! Hesabınız təsdiqləndi. Şəxsi hesab
+                            səhifəsində email və şifrəni daxil etməklə hesabınıza daxil ola bilərsiniz.
+                        </p>
+                    </div>
+                </div>
+            }
+            <!-- +++TEMPDATA ACCOUNT CONFIRMED+++ -->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="confirmation-success-icon-container">
+                        <i class="fas fa-check-circle success-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <a asp-controller="Hesab" asp-action="Girish" class="text-decoration-none">
+                    <input class="confirmation-login input-login-register-pages input-btn-login-register"
+                           type="button" value="Şəxsi hesaba giriş">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CONFIRMATION section end -->
+
+@section scripts
+{
+    <!-- ---jQuery Validation--- -->
+    <script src="~/jQuery Validation/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/jQuery Validation/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <!-- +++jQuery Validation+++ -->
+}
